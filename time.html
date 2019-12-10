@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charst="utf-8">
+    <title>time</title>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+        <span id = "soFar">00:00:00</span></p>
+    <script type="text/javascript">
+        var seconds = 0;
+        var min = 0;
+        var hr=0;
+        function startTimer() {
+            window.setInterval("updateTime()", 10);
+        }
+        function updateTime() {
+            ++seconds;
+            if(seconds==60){
+                seconds-=60;
+                min+=1;
+            }
+            if( min==60){
+                min-=60;
+                hr+=1;
+            }
+            document.getElementById("soFar").innerHTML = hr+":"+min+":"+seconds;
+        }
+        window.addEventListener("load", startTimer, false);
+    </script>
+</body>
+
+</html>
