@@ -10,24 +10,27 @@
 </head>
 
 <body>
-        <span id = "soFar">00:00</span></p>
+        <span id = "soFar">00:00:00</span></p>
     <script type="text/javascript">
-        var seconds = 0;
+        var sec = 0;
         var min = 0;
         var hr=0;
         function startTimer() {
-            window.setInterval("updateTime()", 10);
+            window.setInterval("updateTime()", 1000);
         }
         function updateTime() {
-            ++seconds;
-            if(seconds==60){
-                seconds-=60;
+            ++sec;
+            if(sec==60){
+                sec-=60;
                 min+=1;
             }
             if( min==60){
                 min-=60;
                 hr+=1;
             }
+            var sec_s = 0;
+            var min_s = 0;
+             var hr_s=0;
             document.getElementById("soFar").innerHTML = hr+":"+min+":"+seconds;
         }
         window.addEventListener("load", startTimer, false);
