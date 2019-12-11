@@ -4,7 +4,7 @@ function clickpic(e) {
     var y = event.offsetY;
     document.getElementById("demo").innerHTML = x + " " + y;
     console.log(x,y);
-    if (!checkmechine && !tabulation && !stairs) {
+    if (e.target.getAttribute("id")=="secondfloor") {
         if (((x > 175 && x < 206) && (y > 130 && y < 150)) || ((x > 110 && x < 175) && (y > 113 && y < 290))) {
             e.target.setAttribute("class", "road");
             e.target.setAttribute("id", "road");
@@ -12,23 +12,19 @@ function clickpic(e) {
             ////window.location.href='machine.html'
             tabulation = true;
         }
-        /*else if ((x > 600 && x < 680) && (y > 134 && y < 312)) {
-            e.target.setAttribute("class", "stair1");
-            e.target.setAttribute("id", "stair1");
+        else if((x > 195 && x < 245) && (y > 224 && y < 286)){
+            e.target.setAttribute("class", "Fire_Extinguisher");
+            e.target.setAttribute("id", "Fire_Extinguisher");
         }
-        else if (e.target.getAttribute("id") == "stair1") {
-            e.target.setAttribute("class", "stair2");
-            e.target.setAttribute("id", "stair2");
-            stairs = true;
-        }*/
+        else if((x > 330 && x <550) && (y > 128 && y < 280)){
+            e.target.setAttribute("class", "elevator");
+            e.target.setAttribute("id", "elevator");
+        }
     }
-    /*else {
+    else if (e.target.getAttribute("id")=="Fire_Extinguisher"|| e.target.getAttribute("id")=="elevator"){
         e.target.setAttribute("class", "secondfloor");
-        checkmechine = false;
-        tabulation = false;
-        stairs = false;
-    }*/
-
+            e.target.setAttribute("id", "secondfloor");
+    }
 }
 function classroom() {
         var classr = window.prompt("輸入教室號碼:"); 
@@ -60,8 +56,8 @@ function classroom() {
          document.getElementById("class212").setAttribute("class", "class212");
         } 
         else{
+            alert("輸入錯誤");
             document.getElementById("road").setAttribute("id", "secondfloor");
             document.getElementById("secondfloor").setAttribute("class", "secondfloor");
-            
         }
 }
