@@ -1,0 +1,112 @@
+.secondfloor {
+    height: 700px;
+   width: 750px;
+    background-image: url(IMG_20191206_163057.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left:400px;
+    background-size:70%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.coin {
+    height: 700px;
+    width: 750px;
+    background-image: url(1F_coin_machine_hint1.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.road {
+    height: 700px;
+    width: 750px;
+    background-image: url(IMG_20191206_163029.jpg);
+    background-position: top, left;
+    z-index: 1;
+   margin-left: 400px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.class201{
+    height: 700px;
+    width: 750px;
+    background-image: url(IMG_20191206_163216.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.class203{
+    height: 700px;
+    width: 750px;
+    background-image: url(IMG_20191206_163209.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.class205{
+    height: 700px;
+    width: 750px;
+    background-image: url(IMG_20191206_163029.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.class210A{
+    height: 700px;
+    width: 750px;
+    background-image: url(IMG_20191206_163159.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.class210B{
+    height: 700px;
+    width: 750px;
+    background-image: url(IMG_20191206_163225.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.class212{
+    height: 700px;
+    width: 750px;
+    background-image: url(IMG_20191206_163126.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.Fire_Extinguisher{
+    height: 700px;
+    width: 750px;
+    background-image: url(Fire_Extinguisher.png);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.elevator{
+    height: 700px;
+    width: 750px;
+    background-image: url(elevator2.png);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}

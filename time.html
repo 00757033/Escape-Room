@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charst="utf-8">
     <title>time</title>
     <style type="text/css">
-    //haha
     </style>
 </head>
-
 <body>
-        <span id = "soFar">00:00:00</span></p>
+    <span id = "soFar">00:00:00.00</span></p>
     <script type="text/javascript">
+        var nsec=0;
         var sec = 0;
         var min = 0;
         var hr=0;
         function startTimer() {
-            window.setInterval("updateTime()", 1000);
+            window.setInterval("updateTime()", 10);
+        }
+        function digits(num) {
+            if(num<10)
+                return "0"+num;
+            else
+                return num;
         }
         function updateTime() {
-            ++sec;
+            nsec++;
+            if(nsec==100)
+            {
+                nsec=0;
+                sec++;
+            }
             if(sec==60){
                 sec-=60;
                 min+=1;
@@ -28,10 +37,7 @@
                 min-=60;
                 hr+=1;
             }
-            var sec_s = 0;
-            var min_s = 0;
-             var hr_s=0;
-            document.getElementById("soFar").innerHTML = hr+":"+min+":"+seconds;
+            document.getElementById("soFar").innerHTML = digits(hr)+":"+digits(min)+":"+digits(sec)+"."+digits(nsec);
         }
         window.addEventListener("load", startTimer, false);
     </script>
