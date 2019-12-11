@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>head</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+       .firstfloor {
+           height: 700px;
+           width: 750px;
+            background-image: url(firstfloor-1.jpg);
+            background-position: top, left;
+            z-index:1;
+            /*margin-left:400px;*/
+            background-size: 70%;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        .coin {
+            background-image: url(1F_coin_machine_hint1.jpg);
+            background-position: top, left;
+            z-index:1;
+            margin-left:400px;
+            background-size: 70%;
+            background-repeat: no-repeat;
+        }
+        .list {
+            background-image: url(IMG_20191206_164340.jpg);
+            background-position: top, left;
+            z-index:1;
+            margin-left:400px;
+            background-size: 70%;
+            background-repeat: no-repeat;
+        }
+        .stair1{
+            background-image: url(IMG_20191206_163903.jpg);
+            background-position: top, left;
+            z-index:1;
+            margin-left:400px;
+            background-size: 70%;
+            background-repeat: no-repeat;
+        }
+        .stair2{
+            background-image: url(IMG_20191206_163842.jpg);
+            background-position: top, left;
+            z-index:1;
+            margin-left:400px;
+            background-size: 70%;
+            background-repeat: no-repeat;
+        }
+        div{
+            width: 800px;
+            height:800px;
+            margin-left:400px;
+            text-align: center;
+        }
+        .paper{
+            position:absolute;
+            top:250px;
+            left: 250px;
+            width: 150px;
+            height:150px;
+            margin-left:400px;
+            display:"block";
+        }
+        .information{
+            /*background-image: url(00.png);*/
+            background-position:center;
+            z-index:1;
+            background-size: 50%;
+            background-position-x: 250px;
+            background-position-y: 250px;
+            background-repeat: no-repeat;
+            margin-left:400px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!--<table id="table" >
+        <tbody id="tbody"> </table>
+        </tbody>!-->
+    <div  id= "firstfloor" class="firstfloor" onclick="clickpic(event)">
+    <img src="紙.png"  class="paper" id="paper">
+</div>
+    <p id="demo"></p>
+    <script src="click_the_pic.js"></script>
+</body>
+
+</html>
