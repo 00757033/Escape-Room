@@ -12,7 +12,7 @@
  .coin {
      height: 700px;
     width: 750px;
-     background-image: url(1F_coin_machine_hint1.jpg);
+     background-image: url(1F_coin_machine.jpg);
      background-position: top, left;
      z-index:1;
      /*margin-left:400px;*/
