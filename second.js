@@ -2,7 +2,6 @@ var checkpaper = 0, checkmechine = false, tabulation = 0, stairs = 0;
 function clickpic(e) {
     var x = event.offsetX;
     var y = event.offsetY;
-    document.getElementById("demo").innerHTML = x + " " + y;
     console.log(x,y);
     if (e.target.getAttribute("id")=="secondfloor") {
         if (((x > 175 && x < 206) && (y > 130 && y < 150)) || ((x > 110 && x < 175) && (y > 113 && y < 290))) {
