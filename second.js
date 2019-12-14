@@ -2,21 +2,20 @@ var checkpaper = 0, checkmechine = false, tabulation = 0, stairs = 0;
 function clickpic(e) {
     var x = event.offsetX;
     var y = event.offsetY;
-    document.getElementById("demo").innerHTML = x + " " + y;
     console.log(x,y);
     if (e.target.getAttribute("id")=="secondfloor") {
-        if (((x > 175 && x < 206) && (y > 130 && y < 150)) || ((x > 110 && x < 175) && (y > 113 && y < 290))) {
+        if (((x > 85 && x < 135) && (y > 185 && y < 220)) || ((x > 1 && x < 95) && (y > 165 && y < 420))) {
             e.target.setAttribute("class", "road");
             e.target.setAttribute("id", "road");
             setTimeout(classroom, 1000);
             ////window.location.href='machine.html'
             tabulation = true;
         }
-        else if((x > 195 && x < 245) && (y > 224 && y < 286)){
+        else if((x > 110 && x < 185) && (y > 320 && y < 415)){
             e.target.setAttribute("class", "Fire_Extinguisher");
             e.target.setAttribute("id", "Fire_Extinguisher");
         }
-        else if((x > 330 && x <550) && (y > 128 && y < 280)){
+        else if((x > 300 && x <625) && (y > 180 && y < 400)){
             e.target.setAttribute("class", "elevator");
             e.target.setAttribute("id", "elevator");
         }

@@ -5,19 +5,122 @@
      background-position: top, left;
      z-index:1;
      /*margin-left:400px;*/
-     background-size: 70%;
+     background-size: 100%;
      background-repeat: no-repeat;
      text-align: center;
  }
  .coin {
      height: 700px;
+<<<<<<< HEAD
+     width: 750px;
+=======
     width: 750px;
-     background-image: url(1F_coin_machine_hint1.jpg);
+<<<<<<< HEAD
+>>>>>>> 8566b684189f22f57429eef44885c229a5762713
+     background-image: url(1F_coin_machine.jpg);
      background-position: top, left;
      z-index:1;
      /*margin-left:400px;*/
-     background-size: 70%;
+     background-size: 100%;
      background-repeat: no-repeat;
+ }
+ .coin_1 {
+     height: 700px;
+     width: 750px;
+     background-image: url(1F_coin_machine_hint2.jpg);
+=======
+     background-image: url(1F_coin_machine.jpg);
+>>>>>>> 8566b684189f22f57429eef44885c229a5762713
+     background-position: top, left;
+     z-index:1;
+     /*margin-left:400px;*/
+     background-size: 100%;
+     background-repeat: no-repeat;
+ }
+ .button_where{
+     height: 20px;
+     width: 50px;
+     position: relative;
+     bottom: 63%;
+     right: 13.5%;
+     text-align: center;
+ }
+ .button_hint{
+    height: 20px;
+    width: 50px;
+    position: relative;
+    bottom: 61%;
+    right: 13.5%;
+    text-align: center;
+ }
+ .button_text{
+    height: 20px;
+    width: 50px;
+    position: relative;
+    bottom: 48%;
+    right: -10%;
+    text-align: center;
+ }
+ .button_giveup{
+    height: 20px;
+    width: 50px;
+    position: relative;
+    bottom: -40%;
+    right: 55%;
+    text-align: center;
+ }
+ .text_answer{
+    position: relative;
+    bottom: 49%;
+    right: 68%;
+ }
+ .hint_list{
+    background-color: lemonchiffon;
+    width: 55%;
+    height: 250px;
+    position: relative;
+    bottom: 75%;
+    right: 30%;
+    font-family: Calibri;
+    font-size: 25px;
+    text-align: left;
+    font-weight: bold;
+ }
+ .hint_list_1{
+    background-color: lemonchiffon;
+    width: 55%;
+    height: 250px;
+    position: relative;
+    bottom: 75%;
+    right: 30%;
+    font-family: Calibri;
+    font-size: 65px;
+    text-align: center;
+    font-weight: bold;
+ }
+ .result_list_f{
+    background-color: #df5959;
+    width: 55%;
+    height: 100px;
+    position: relative;
+    bottom: 70%;
+    right: 30%;
+    font-family: Calibri;
+    font-size: 62px;
+    text-align: center;
+    font-weight: bold;
+ }
+ .result_list_t{
+    background-color: #59df81;
+    width: 55%;
+    height: 100px;
+    position: relative;
+    bottom: 70%;
+    right: 30%;
+    font-family: Calibri;
+    font-size: 62px;
+    text-align: center;
+    font-weight: bold;
  }
  .list {
      height: 700px;
@@ -26,7 +129,7 @@
      background-position: top, left;
      z-index:1;
      /*margin-left:400px;*/
-     background-size: 70%;
+     background-size: 100%;
      background-repeat: no-repeat;
  }
  .stair1{
@@ -36,7 +139,7 @@
      background-position: top, left;
      z-index:1;
      /*margin-left:400px;*/
-     background-size: 70%;
+     background-size: 100%;
      background-repeat: no-repeat;
  }
  .stair2{
@@ -46,7 +149,7 @@
      background-position: top, left;
      z-index:1;
      /*margin-left:400px;*/
-     background-size: 70%;
+     background-size: 100%;
      background-repeat: no-repeat;
  }
  div{
@@ -56,14 +159,25 @@
      text-align: center;
  }
  .information{
+<<<<<<< HEAD
+    height: 700px;
+   width: 750px;
+    background-image: url(paper.jpg);
+    background-position: top, left;
+    z-index:1;
+    /*margin-left:400px;*/
+    background-size: 70%;
+    background-repeat: no-repeat;
+=======
      height: 700px;
     width: 750px;
      background-image: url(00.png);
      background-position:center;
      z-index:1;
-     background-size: 70%;
+     background-size: 100%;
      background-repeat: no-repeat;
      margin-left:400px;
+>>>>>>> 8566b684189f22f57429eef44885c229a5762713
  }
  .trash_can{
      height: 700px;
@@ -71,7 +185,7 @@
      background-image: url(trash_can.png);
      background-position:center;
      z-index:1;
-     background-size: 70%;
+     background-size: 100%;
      background-repeat: no-repeat;
      margin-left:400px;
  }
@@ -81,7 +195,7 @@
      background-image: url(trash_can.png);
      background-position:center;
      z-index:1;
-     background-size: 70%;
+     background-size: 100%;
      background-repeat: no-repeat;
      margin-left:400px;
  }
