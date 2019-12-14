@@ -4,7 +4,7 @@ function clickpic(e) {
     var y = event.offsetY;
     console.log(x, y);
     if (e.target.getAttribute("id") == "firstfloor") {
-        if ((x > 450 && x < 570) && (y > 210 && y < 375)) {
+        if ((x > 450 && x < 510) && (y > 158 && y < 290)) {
             e.target.setAttribute("id", "coin");
             e.target.setAttribute("class", "coin");
             if(e.target.getAttribute("id")=="coin"){
@@ -12,36 +12,18 @@ function clickpic(e) {
             }
             ////window.location.href='machine.html'
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
         else if ((x > 115 && x < 160) && (y > 10 && y < 250)) {
             document.getElementById("onmachine").innerHTML = "";
-=======
-        else if ((x > 3 && x <50) && (y > 20 && y < 325)) {
->>>>>>> 8566b684189f22f57429eef44885c229a5762713
-=======
-        else if ((x > 3 && x <50) && (y > 20 && y < 325)) {
->>>>>>> 8566b684189f22f57429eef44885c229a5762713
             e.target.setAttribute("class", "list");
             e.target.setAttribute("id", "list");
             ////window.location.href='machine.html'
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
         else if ((x > 210 && x < 260) && (y > 208 && y < 260)) {
             document.getElementById("onmachine").innerHTML = "";
-=======
-        else if ((x > 140 && x < 195) && (y > 300 && y < 365)) {
->>>>>>> 8566b684189f22f57429eef44885c229a5762713
-=======
-        else if ((x > 140 && x < 195) && (y > 300 && y < 365)) {
->>>>>>> 8566b684189f22f57429eef44885c229a5762713
             e.target.setAttribute("class", "trash_can");
             e.target.setAttribute("id", "trash_can");
             ////window.location.href='machine.html'
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
         else if ((x > 320 && x < 410) && (y > 305 && y < 338)) {
             document.getElementById("onmachine").innerHTML = "";
             e.target.setAttribute("class", "information");
@@ -54,20 +36,6 @@ function clickpic(e) {
         }
         else if ((x > 600 && x < 680) && (y > 134 && y < 312)) {
             document.getElementById("onmachine").innerHTML = "";
-=======
-        else if ((x > 280 && x < 420) && (y > 435 && y < 490)) {
-            e.target.setAttribute("class", "information");
-            e.target.setAttribute("id", "information");
-        }
-        else if ((x > 680 && x < 750) && (y > 170 && y < 455)) {
->>>>>>> 8566b684189f22f57429eef44885c229a5762713
-=======
-        else if ((x > 280 && x < 420) && (y > 435 && y < 490)) {
-            e.target.setAttribute("class", "information");
-            e.target.setAttribute("id", "information");
-        }
-        else if ((x > 680 && x < 750) && (y > 170 && y < 455)) {
->>>>>>> 8566b684189f22f57429eef44885c229a5762713
             e.target.setAttribute("class", "stair1");
             e.target.setAttribute("id", "stair1");
         }
@@ -76,9 +44,6 @@ function clickpic(e) {
         document.getElementById("onmachine").innerHTML = "";
         e.target.setAttribute("class", "stair2");
         e.target.setAttribute("id", "stair2");
-    }
-    else if (e.target.getAttribute("id") == "stair2"){
-        window.location.href='second.html';
     }
     else {
         document.getElementById("onmachine").innerHTML = "";

@@ -11,12 +11,8 @@
  }
  .coin {
      height: 700px;
-<<<<<<< HEAD
      width: 750px;
-=======
     width: 750px;
-<<<<<<< HEAD
->>>>>>> 8566b684189f22f57429eef44885c229a5762713
      background-image: url(1F_coin_machine.jpg);
      background-position: top, left;
      z-index:1;
@@ -28,9 +24,7 @@
      height: 700px;
      width: 750px;
      background-image: url(1F_coin_machine_hint2.jpg);
-=======
      background-image: url(1F_coin_machine.jpg);
->>>>>>> 8566b684189f22f57429eef44885c229a5762713
      background-position: top, left;
      z-index:1;
      /*margin-left:400px;*/
@@ -159,7 +153,6 @@
      text-align: center;
  }
  .information{
-<<<<<<< HEAD
     height: 700px;
    width: 750px;
     background-image: url(paper.jpg);
@@ -168,7 +161,6 @@
     /*margin-left:400px;*/
     background-size: 70%;
     background-repeat: no-repeat;
-=======
      height: 700px;
     width: 750px;
      background-image: url(00.png);
@@ -177,7 +169,6 @@
      background-size: 100%;
      background-repeat: no-repeat;
      margin-left:400px;
->>>>>>> 8566b684189f22f57429eef44885c229a5762713
  }
  .trash_can{
      height: 700px;
