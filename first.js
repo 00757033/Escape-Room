@@ -31,6 +31,9 @@ function clickpic(e) {
         e.target.setAttribute("class", "stair2");
         e.target.setAttribute("id", "stair2");
     }
+    else if (e.target.getAttribute("id") == "stair2"){
+        window.location.href='second.html';
+    }
     else {
         e.target.setAttribute("class", "firstfloor");
         e.target.setAttribute("id", "firstfloor");
