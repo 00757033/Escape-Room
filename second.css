@@ -1,7 +1,7 @@
 .secondfloor {
     height: 700px;
    width: 750px;
-    background-image: url(IMG_20191206_163057.jpg);
+    background-image: url(second_floor_1.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left:400px;
@@ -23,7 +23,7 @@
 .road {
     height: 700px;
     width: 750px;
-    background-image: url(IMG_20191206_163029.jpg);
+    background-image: url(road_2f.jpg);
     background-position: top, left;
     z-index: 1;
    margin-left: 400px;
@@ -33,7 +33,7 @@
 .class201{
     height: 700px;
     width: 750px;
-    background-image: url(IMG_20191206_163216.jpg);
+    background-image: url(class_201.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -43,7 +43,7 @@
 .class203{
     height: 700px;
     width: 750px;
-    background-image: url(IMG_20191206_163209.jpg);
+    background-image: url(class_203.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -53,7 +53,7 @@
 .class205{
     height: 700px;
     width: 750px;
-    background-image: url(205.jpg);
+    background-image: url(class_205.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -63,7 +63,7 @@
 .class210A{
     height: 700px;
     width: 750px;
-    background-image: url(IMG_20191206_163159.jpg);
+    background-image: url(class_210A.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -73,7 +73,7 @@
 .class210B{
     height: 700px;
     width: 750px;
-    background-image: url(IMG_20191206_163225.jpg);
+    background-image: url(class_210B.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -83,7 +83,7 @@
 .class212{
     height: 700px;
     width: 750px;
-    background-image: url(IMG_20191206_163126.jpg);
+    background-image: url(class_212.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
