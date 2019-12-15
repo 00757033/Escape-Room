@@ -34,24 +34,24 @@
      height: 20px;
      width: 50px;
      position: relative;
-     bottom: 63%;
-     right: 13.5%;
+     bottom: 51%;
+     right: -20%;
      text-align: center;
  }
  .button_hint{
     height: 20px;
     width: 50px;
     position: relative;
-    bottom: 61%;
-    right: 13.5%;
+    bottom: 50%;
+    right: -20%;
     text-align: center;
  }
  .button_text{
     height: 20px;
-    width: 50px;
+    width: 20px;
     position: relative;
-    bottom: 48%;
-    right: -10%;
+    bottom: 45%;
+    right: -25%;
     text-align: center;
  }
  .button_giveup{
@@ -64,8 +64,8 @@
  }
  .text_answer{
     position: relative;
-    bottom: 49%;
-    right: 68%;
+    bottom: 51%;
+    right: 25%;
  }
  .hint_list{
     background-color: lemonchiffon;
