@@ -118,7 +118,7 @@
  .list {
      height: 700px;
     width: 750px;
-     background-image: url(IMG_20191206_164340.jpg);
+     background-image: url(list.jpg);
      background-position: top, left;
      z-index:1;
      /*margin-left:400px;*/
@@ -128,7 +128,7 @@
  .stair1{
      height: 700px;
     width: 750px;
-     background-image: url(IMG_20191206_163903.jpg);
+     background-image: url(stair_1fto2f_1.jpg);
      background-position: top, left;
      z-index:1;
      /*margin-left:400px;*/
@@ -138,7 +138,7 @@
  .stair2{
      height: 700px;
     width: 750px;
-     background-image: url(IMG_20191206_163842.jpg);
+     background-image: url(stiar_1fto2f_2.jpg);
      background-position: top, left;
      z-index:1;
      /*margin-left:400px;*/
