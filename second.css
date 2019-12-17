@@ -1,7 +1,7 @@
 .secondfloor {
     height: 700px;
    width: 750px;
-    background-image: url(second_floor_1.jpg);
+    background-image: url(./second/second_floor_1.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left:400px;
@@ -12,7 +12,7 @@
 .road {
     height: 700px;
     width: 750px;
-    background-image: url(road_2f.jpg);
+    background-image: url(./second/road_2f.jpg);
     background-position: top, left;
     z-index: 1;
    margin-left: 400px;
@@ -22,7 +22,7 @@
 .class201{
     height: 700px;
     width: 750px;
-    background-image: url(class_201.jpg);
+    background-image: url(./second/class_201.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -32,7 +32,7 @@
 .class203{
     height: 700px;
     width: 750px;
-    background-image: url(class_203.jpg);
+    background-image: url(./second/class_203.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -42,7 +42,7 @@
 .class205{
     height: 700px;
     width: 750px;
-    background-image: url(class_205.jpg);
+    background-image: url(./second/class_205.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -52,7 +52,7 @@
 .class210A{
     height: 700px;
     width: 750px;
-    background-image: url(class_210A.jpg);
+    background-image: url(./second/class_210A.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -62,7 +62,7 @@
 .class210B{
     height: 700px;
     width: 750px;
-    background-image: url(class_210B.jpg);
+    background-image: url(./second/class_210B.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -72,7 +72,7 @@
 .class212{
     height: 700px;
     width: 750px;
-    background-image: url(class_212.jpg);
+    background-image: url(./second/class_212.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -82,7 +82,7 @@
 .Fire_Extinguisher{
     height: 700px;
     width: 750px;
-    background-image: url(Fire_Extinguisher.png);
+    background-image: url(./second/Fire_Extinguisher.png);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -92,7 +92,7 @@
 .elevator{
     height: 700px;
     width: 750px;
-    background-image: url(elevator2.png);
+    background-image: url(./second/elevator2.png);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
