@@ -108,3 +108,4 @@ function check_ans(){
     }
     document.getElementById("onmachine").innerHTML = inner;
 }
+
