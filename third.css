@@ -1,0 +1,32 @@
+.secondfloor {
+    height: 700px;
+   width: 750px;
+    background-image: url(second_floor_1.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left:400px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.thirdfloor_left {
+    height: 700px;
+    width: 750px;
+    background-image: url(thirdfloor_left.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.rest_area{
+    height: 700px;
+    width: 750px;
+    background-image: url(rest_area.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}

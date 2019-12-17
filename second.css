@@ -9,17 +9,6 @@
     background-repeat: no-repeat;
     text-align: center;
 }
-.coin {
-    height: 700px;
-    width: 750px;
-    background-image: url(1F_coin_machine_hint1.jpg);
-    background-position: top, left;
-    z-index: 1;
-    margin-left: 400px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
 .road {
     height: 700px;
     width: 750px;
