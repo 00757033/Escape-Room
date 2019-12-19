@@ -1,7 +1,7 @@
 var hint_times = 0;
 function clickpic(e) {
-    var x = event.offsetX;
-    var y = event.offsetY;
+    var x = e.offsetX;
+    var y = e.offsetY;
     console.log(x, y);
     if (e.target.getAttribute("id") == "firstfloor") {
         if ((x > 450 && x < 570) && (y > 210 && y < 375))  {

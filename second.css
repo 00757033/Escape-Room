@@ -1,4 +1,4 @@
-.secondfloor {
+.secondfloor_1 {
     height: 700px;
    width: 750px;
     background-image: url(./second/second_floor_1.jpg);
@@ -8,6 +8,39 @@
     background-size:100%;
     background-repeat: no-repeat;
     text-align: center;
+}
+.secondfloor {
+    height: 700px;
+   width: 750px;
+    background-image: url(./second/second_floor.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left:400px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.stair2to3_1{
+    height: 700px;
+   width: 750px;
+    background-image: url(./second/2to3_1.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left:400px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.stair2to3_2{
+    height: 700px;
+    width: 750px;
+     background-image: url(./second/2to3_2.jpg);
+     background-position: top, left;
+     z-index: 1;
+     margin-left:400px;
+     background-size:100%;
+     background-repeat: no-repeat;
+     text-align: center;
 }
 .road {
     height: 700px;

@@ -1,13 +1,14 @@
 .firstfloor {
     height: 700px;
     width: 750px;
-     background-image: url(./first/firstfloor-1.jpg);
-     background-position: top, left;
-     z-index:1;
-     margin-left:400px;
-     background-size: 100%;
-     background-repeat: no-repeat;
-     text-align: center;
+    background-image: url(./first/firstfloor-1.jpg);
+    background-position: top, left;
+    z-index:1;
+    margin-left:400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    float: left;
  }
  .coin {
      height: 700px;
@@ -128,7 +129,7 @@
  .stair1{
      height: 700px;
     width: 750px;
-     background-image: url(./first/stair_1fto2f_1.jpg);
+     background-image: url(./first/1to2_1.jpg);
      background-position: top, left;
      z-index:1;
      /*margin-left:400px;*/
@@ -138,7 +139,7 @@
  .stair2{
      height: 700px;
     width: 750px;
-     background-image: url(./first/stiar_1fto2f_2.jpg);
+     background-image: url(./first/1to2_2.jpg);
      background-position: top, left;
      z-index:1;
      /*margin-left:400px;*/

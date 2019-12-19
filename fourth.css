@@ -1,27 +1,57 @@
-.thirdfloor {
+.fourthfloor {
     height: 700px;
     width: 750px;
-    background-image: url(./third/thirdfloor.jpg);
+    background-image: url(./fourth/fourthfloor.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.stair3to4_1 {
+.stair {
     height: 700px;
     width: 750px;
-    background-image: url(./third/3to4_1.jpg);
+    background-image: url(./fourth/stair.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.stair3to4_2 {
+.stair4to3_1 {
     height: 700px;
     width: 750px;
-    background-image: url(./third/3to4_2.jpg);
+    background-image: url(./fourth/4to3_1.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.stair4to3_2 {
+    height: 700px;
+    width: 750px;
+    background-image: url(./fourth/4to3_2.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.stair4to5_1 {
+    height: 700px;
+    width: 750px;
+    background-image: url(./fourth/4to5_1.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.stair4to5_2 {
+    height: 700px;
+    width: 750px;
+    background-image: url(./fourth/4to5_2.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -31,7 +61,7 @@
 .left {
     height: 700px;
     width: 750px;
-    background-image: url(./third/left.jpg);
+    background-image: url(./fourth/left.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -41,7 +71,7 @@
 .left_road {
     height: 700px;
     width: 750px;
-    background-image: url(./third/left_road.jpg);
+    background-image: url(./fourth/left_road.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -51,7 +81,7 @@
 .right {
     height: 700px;
     width: 750px;
-    background-image: url(./third/right.jpg);
+    background-image: url(./fourth/right.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
@@ -61,57 +91,17 @@
 .right_road {
     height: 700px;
     width: 750px;
-    background-image: url(./third/right_road.jpg);
+    background-image: url(./fourth/right_road.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.rest_area{
+.table{
     height: 700px;
     width: 750px;
-    background-image: url(./third/rest_area.jpg);
-    background-position: top, left;
-    z-index: 1;
-    margin-left: 400px;
-    background-size: 100%;
-    background-repeat: no-repeat; 
-}
-.rest_area_ac {
-    height: 700px;
-    width: 750px;
-    background-image: url(./third/rest_area_ac.jpg);
-    background-position: top, left;
-    z-index: 1;
-    margin-left: 400px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.rest_area_chair {
-    height: 700px;
-    width: 750px;
-    background-image: url(./third/rest_area_chair.jpg);
-    background-position: top, left;
-    z-index: 1;
-    margin-left: 400px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.rest_area_table {
-    height: 700px;
-    width: 750px;
-    background-image: url(./third/rest_area_table.jpg);
-    background-position: top, left;
-    z-index: 1;
-    margin-left: 400px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.coin_machine {
-    height: 700px;
-    width: 750px;
-    background-image: url(./third/coin_machine.jpg);
+    background-image: url(./fourth/table.jpg);
     background-position: top, left;
     z-index: 1;
     margin-left: 400px;
