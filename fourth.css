@@ -108,3 +108,13 @@
     background-size: 100%;
     background-repeat: no-repeat;
 }
+.trash_can{
+    height: 700px;
+    width: 750px;
+    background-image: url(./fourth/trash_can.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
