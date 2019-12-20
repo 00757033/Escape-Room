@@ -29,21 +29,34 @@ function clickpic(e) {
         }
     }
     else if (e.target.getAttribute("id")=="stair4to3_1"){
-        e.target.setAttribute("class", "stair4to3_2");
-        e.target.setAttribute("id", "stair4to3_2");
+        if((x>590 && x<750) &&(y>0 && y<560)){
+            e.target.setAttribute("class", "stair");
+            e.target.setAttribute("id", "stair");
+        }
+        else{
+            e.target.setAttribute("class", "stair4to3_2");
+            e.target.setAttribute("id", "stair4to3_2");
+        }
     }
     else if (e.target.getAttribute("id")=="stair4to3_2"){
         window.location.href='third.html';
     }
     else if (e.target.getAttribute("id")=="stair4to5_1"){
-        e.target.setAttribute("class", "stair");
-        e.target.setAttribute("id", "stair");
+       if((x>0 && x<170) &&(y>156 && y<560)){
+            e.target.setAttribute("class", "stair");
+            e.target.setAttribute("id", "stair");
+        }
+        else{
+            e.target.setAttribute("class", "stair4to5_2");
+            e.target.setAttribute("id", "stair4to5_2");
+        }
     }
     else if (e.target.getAttribute("id")=="stair4to5_2"){
         window.location.href='fifth.html';
     }
     else if (e.target.getAttribute("id")=="left"){
-        if((x>0 && x<70) &&(y>85 && y<565)){
+        if((x>0 && x<70) &&(y>85 && y<565) &&
+            !((x>55 && x<175) && (y>130 && y<210))){
             e.target.setAttribute("class", "stair");
             e.target.setAttribute("id", "stair");
         }
