@@ -29,12 +29,20 @@ function clickpic(e) {
         }
     }
     else if (e.target.getAttribute("id")=="Fire_Extinguisher"|| e.target.getAttribute("id")=="elevator"){
-        e.target.setAttribute("class", "secondfloor");
-        e.target.setAttribute("id", "secondfloor");
+        e.target.setAttribute("class", "secondfloor_1");
+        e.target.setAttribute("id", "secondfloor_1");
     }
     else if (e.target.getAttribute("id")=="stair2to3_1"){
         e.target.setAttribute("class", "stair2to3_2");
         e.target.setAttribute("id", "stair2to3_2");
+    }
+    else if (e.target.getAttribute("id")=="class201"||
+    e.target.getAttribute("id")=="class203"||
+    e.target.getAttribute("id")=="class210A"|| 
+    e.target.getAttribute("id")=="class210B"||
+    e.target.getAttribute("id")=="class212"){
+        e.target.setAttribute("class", "secondfloor");
+        e.target.setAttribute("id", "secondfloor");
     }
     else if (e.target.getAttribute("id") == "stair2to3_2"){
         window.location.href='third.html';

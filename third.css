@@ -98,16 +98,6 @@
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.rest_area_table {
-    height: 700px;
-    width: 750px;
-    background-image: url(./third/rest_area_table.jpg);
-    background-position: top, left;
-    z-index: 1;
-    margin-left: 400px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
 .coin_machine {
     height: 700px;
     width: 750px;

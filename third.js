@@ -46,10 +46,6 @@ function clickpic(e){
             e.target.setAttribute("class", "rest_area_ac");
             e.target.setAttribute("id", "rest_area_ac");
         }
-        else if((x>360 && x<450) && (y>275 && y<305)){
-            e.target.setAttribute("class", "rest_area_table");
-            e.target.setAttribute("id", "rest_area_table");
-        }
         else if((x>605 && x<740) && (y>255 && y<420)){
             e.target.setAttribute("class", "rest_area_chair");
             e.target.setAttribute("id", "rest_area_chair");
@@ -60,7 +56,6 @@ function clickpic(e){
         }
     }
     else if(e.target.getAttribute("id")=="rest_area_ac" 
-        || e.target.getAttribute("id")=="rest_area_table"
         || e.target.getAttribute("id")=="rest_area_chair"){
         e.target.setAttribute("class", "rest_area");
         e.target.setAttribute("id", "rest_area");
