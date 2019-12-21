@@ -56,26 +56,25 @@ function classroom() {
         } 
         else if(classr=="203"){
             document.getElementById("road").setAttribute("id", "class203");
-         document.getElementById("class203").setAttribute("class", "class203");
-         
+            document.getElementById("class203").setAttribute("class", "class203");         
         } 
         else if(classr=="205"){
-        document.getElementById("road").setAttribute("id", "class205");
-         document.getElementById("class205").setAttribute("class", "class205");
+            document.getElementById("road").setAttribute("id", "class205");
+            document.getElementById("class205").setAttribute("class", "class205");
          
         } 
         else if(classr=="210A"){
-         document.getElementById("road").setAttribute("id", "class210A");
-         document.getElementById("class210A").setAttribute("class", "class210A");
+            document.getElementById("road").setAttribute("id", "class210A");
+            document.getElementById("class210A").setAttribute("class", "class210A");
          
         } 
         else if(classr=="210B"){
-         document.getElementById("road").setAttribute("id", "class210B");
-         document.getElementById("class210B").setAttribute("class", "class210B");
+            document.getElementById("road").setAttribute("id", "class210B");
+            document.getElementById("class210B").setAttribute("class", "class210B");
         } 
         else if(classr=="212"){
-        document.getElementById("road").setAttribute("id", "class212");
-         document.getElementById("class212").setAttribute("class", "class212");
+            document.getElementById("road").setAttribute("id", "class212");
+            document.getElementById("class212").setAttribute("class", "class212");
         } 
         else{
             alert("輸入錯誤");
