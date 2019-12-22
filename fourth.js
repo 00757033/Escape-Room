@@ -96,10 +96,4 @@ function clickpic(e) {
         e.target.setAttribute("class", "right_road");
         e.target.setAttribute("id", "right_road");
     }
-    /*else if(e.target.getAttribute("id")=="trash_can" 
-    || e.target.getAttribute("id")=="rest_area_table"
-    || e.target.getAttribute("id")=="rest_area_chair"){
-    e.target.setAttribute("class", "rest_area");
-    e.target.setAttribute("id", "rest_area");
-    }*/
 }
