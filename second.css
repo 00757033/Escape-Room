@@ -1,96 +1,96 @@
 .secondfloor_1 {
-    height: 700px;
-   width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/second_floor_1.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left:400px;
     background-size:100%;
     background-repeat: no-repeat;
     text-align: center;
+    float: left;
 }
 .secondfloor {
-    height: 700px;
-   width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/second_floor.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left:400px;
     background-size:100%;
     background-repeat: no-repeat;
     text-align: center;
+    float: left;
 }
-.stair2to3_1{
-    height: 700px;
-   width: 750px;
+.stair2to3_1{ 
+    height: 600px;
+    width: 800px;
     background-image: url(./second/2to3_1.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left:400px;
     background-size:100%;
     background-repeat: no-repeat;
     text-align: center;
+    float: left;
 }
 .stair2to3_2{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
      background-image: url(./second/2to3_2.jpg);
      background-position: top, left;
      z-index: 1;
-     margin-left:400px;
      background-size:100%;
      background-repeat: no-repeat;
      text-align: center;
+     float: left;
 }
 .road {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/road_2f.jpg);
     background-position: top, left;
     z-index: 1;
-   margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .class201{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/class_201.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .class203{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/class_203.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .class205{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/class_205.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .class210A{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/class_210A.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .mac_button{
     height: 125px;
@@ -100,42 +100,42 @@
     text-align: center;
 }
 .class210B{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/class_210B.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .class212{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/class_212.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .Fire_Extinguisher{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/Fire_Extinguisher.png);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .elevator{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/elevator2.png);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }

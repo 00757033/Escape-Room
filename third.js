@@ -24,8 +24,8 @@ function clickpic(e){
         window.location.href='fourth.html';
     }
     else if(e.target.getAttribute("id")=="right_road"){
-        e.target.setAttribute("class", "thirdfloor");
-        e.target.setAttribute("id", "thirdfloor");
+        if((x>322 && x<438) && (y>195 && y<305))
+            window.alert("走道盡頭摟!");
     }
     else if(e.target.getAttribute("id")=="left"){
         if((x>5 && x<78) && (y>105 && y<450)){
@@ -61,7 +61,10 @@ function clickpic(e){
         e.target.setAttribute("id", "rest_area");
     }
     else if(e.target.getAttribute("id")=="right"){
-        e.target.setAttribute("class", "right_road");
-        e.target.setAttribute("id", "right_road");
+        if((x>335 && x<440) && (y > 200 && y<300))
+        {
+            e.target.setAttribute("class", "right_road");
+            e.target.setAttribute("id", "right_road");
+        }
     }
 }

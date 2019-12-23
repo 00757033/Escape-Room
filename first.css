@@ -1,42 +1,31 @@
 .firstfloor {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./first/firstfloor-1.jpg);
     background-position: top, left;
-    z-index:1;
-    margin-left:400px;
     background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
     float: left;
  }
- body {
-   background-image: url(1523477724-4221215632_wn.jpg);
-   z-index:0;
-   background-repeat: no-repeat;
-   background-size:cover;
-
- }
  .coin {
-     height: 700px;
-     width: 750px;
-    width: 750px;
+   height: 600px;
+   width: 800px;
      background-image: url(./first/coin_machine.jpg);
      background-position: top, left;
      z-index:1;
-     margin-left:400px;
      background-size: 100%;
      background-repeat: no-repeat;
+     float: left;
  }
  .coin_1 {
-     height: 700px;
-     width: 750px;
+   height: 600px;
+   width: 800px;
      background-image: url(./first/coin_machine_hint2.jpg);
      background-position: top, left;
-     z-index:1;
-     margin-left:400px;
      background-size: 100%;
      background-repeat: no-repeat;
+     float: left;
  }
  .button_where{
      height: 20px;
@@ -124,44 +113,43 @@
     font-weight: bold;
  }
  .list {
-     height: 700px;
-    width: 750px;
+   height: 600px;
+   width: 800px;
      background-image: url(./first/list.jpg);
      background-position: top, left;
      z-index:1;
-     margin-left:400px;
      background-size: 100%;
      background-repeat: no-repeat;
+     float: left;
  }
  .stair1{
-     height: 700px;
-    width: 750px;
+   height: 600px;
+   width: 800px;
      background-image: url(./first/1to2_1.jpg);
      background-position: top, left;
      z-index:1;
-     margin-left:400px;
      background-size: 100%;
      background-repeat: no-repeat;
+     float: left;
  }
  .stair2{
-     height: 700px;
-    width: 750px;
+   height: 600px;
+   width: 800px;
      background-image: url(./first/1to2_2.jpg);
      background-position: top, left;
      z-index:1;
-     margin-left:400px;
      background-size: 100%;
      background-repeat: no-repeat;
+     float: left;
  }
  div{
      width: 800px;
      height:800px;
-     margin-left:400px;
      text-align: center;
  }
  .information{
-    height: 700px;
-    width: 750px;
+   height: 600px;
+   width: 800px;
     background-image: url(./first/paper.jpg);
     background-position: top, left;
     margin-left:400px;
@@ -169,15 +157,15 @@
     z-index:1;
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-left:400px;
+    float: left;
  }
  .trash_can{
-     height: 700px;
-    width: 750px;
+   height: 600px;
+   width: 800px;
      background-image: url(./first/trash_can.png);
      background-position:center;
      z-index:1;
      background-size: 100%;
      background-repeat: no-repeat;
-     margin-left:400px;
+     float: left;
  }
