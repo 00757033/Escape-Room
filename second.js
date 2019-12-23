@@ -37,10 +37,10 @@ function clickpic(e) {
         e.target.setAttribute("id", "stair2to3_2");
     }
     else if (e.target.getAttribute("id")=="class201"||
-    e.target.getAttribute("id")=="class203"||
-    e.target.getAttribute("id")=="class210A"|| 
-    e.target.getAttribute("id")=="class210B"||
-    e.target.getAttribute("id")=="class212"){
+        e.target.getAttribute("id")=="class203"||
+        e.target.getAttribute("id")=="class210A"|| 
+        e.target.getAttribute("id")=="class210B"||
+        e.target.getAttribute("id")=="class212"){
         e.target.setAttribute("class", "secondfloor");
         e.target.setAttribute("id", "secondfloor");
     }
@@ -49,36 +49,44 @@ function clickpic(e) {
     }
 }
 function classroom() {
-        var classr = window.prompt("輸入教室號碼:"); 
-        if(classr=="201"){
-            document.getElementById("road").setAttribute("id", "class201");
-            document.getElementById("class201").setAttribute("class", "class201");
-        } 
-        else if(classr=="203"){
-            document.getElementById("road").setAttribute("id", "class203");
-            document.getElementById("class203").setAttribute("class", "class203");         
-        } 
-        else if(classr=="205"){
-            document.getElementById("road").setAttribute("id", "class205");
-            document.getElementById("class205").setAttribute("class", "class205");
-         
-        } 
-        else if(classr=="210A"){
-            document.getElementById("road").setAttribute("id", "class210A");
-            document.getElementById("class210A").setAttribute("class", "class210A");
-         
-        } 
-        else if(classr=="210B"){
-            document.getElementById("road").setAttribute("id", "class210B");
-            document.getElementById("class210B").setAttribute("class", "class210B");
-        } 
-        else if(classr=="212"){
-            document.getElementById("road").setAttribute("id", "class212");
-            document.getElementById("class212").setAttribute("class", "class212");
-        } 
-        else{
-            alert("輸入錯誤");
-            document.getElementById("road").setAttribute("id", "secondfloor");
-            document.getElementById("secondfloor").setAttribute("class", "secondfloor");
-        }
+    var classr = window.prompt("輸入教室號碼:"); 
+    if(classr=="201"){
+        document.getElementById("road").setAttribute("id", "class201");
+        document.getElementById("class201").setAttribute("class", "class201");
+    } 
+    else if(classr=="203"){
+        document.getElementById("road").setAttribute("id", "class203");
+        document.getElementById("class203").setAttribute("class", "class203");         
+    } 
+    else if(classr=="205"){
+        document.getElementById("road").setAttribute("id", "class205");
+        document.getElementById("class205").setAttribute("class", "class205");
+        window.location.href='mac.html'
+    } 
+    else if(classr=="210A"){
+        document.getElementById("road").setAttribute("id", "class210A");
+        document.getElementById("class210A").setAttribute("class", "class210A");
+    } 
+    else if(classr=="210B"){
+        document.getElementById("road").setAttribute("id", "class210B");
+         document.getElementById("class210B").setAttribute("class", "class210B");
+    } 
+    else if(classr=="212"){
+        document.getElementById("road").setAttribute("id", "class212");
+        document.getElementById("class212").setAttribute("class", "class212");
+    } 
+    else{
+        alert("輸入錯誤");
+        document.getElementById("road").setAttribute("id", "secondfloor");
+        document.getElementById("secondfloor").setAttribute("class", "secondfloor");
+    }
+}
+
+function set_button(){
+    var inner = "<img src='./second/mac_button.jpg' >";
+    document.getElementById("onmac").innerHTML = inner;
+}
+
+function tomac(){
+    console.log("91");
 }

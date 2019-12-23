@@ -92,6 +92,13 @@
     background-size: 100%;
     background-repeat: no-repeat;
 }
+.mac_button{
+    height: 125px;
+    width: 132px;
+    bottom: 100%;
+    right: 20%;
+    text-align: center;
+}
 .class210B{
     height: 700px;
     width: 750px;

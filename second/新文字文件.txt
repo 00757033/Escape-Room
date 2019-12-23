@@ -1,0 +1,10 @@
+.mac_button{
+    height: 125px;
+    width: 132px;
+    background-image: url(./second/mac_button.jpg);
+    background-size: 100%;
+    position: relative;
+    bottom: -100%;
+    right: -20%;
+    text-align: center;
+}

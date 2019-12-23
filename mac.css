@@ -1,0 +1,30 @@
+.class205{
+    height: 700px;
+    width: 750px;
+    background-image: url(./second/class_205.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.mac{
+    height: 700px;
+    width: 750px;
+    background-image: url(./second/mac/mac_screen.jpg);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.screen{
+    height: 700px;
+    width: 750px;
+    background-image: url(./second/mac/mac_desktop.png);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
