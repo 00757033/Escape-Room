@@ -3,7 +3,6 @@
     width: 800px;
     background-image: url(./third/thirdfloor.jpg);
     background-position: top, left;
-    z-index: 1;
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
