@@ -1,80 +1,80 @@
 .fifthfloor {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fifth/fifthfloor.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .stair5to4_1 {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fifth/5to4_1.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .stair5to4_2 {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fifth/5to4_2.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .left {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fifth/left.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .left_road {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fifth/left_road.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .right {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fifth/right.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .right_person {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fifth/right_person.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .right_road_person {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fifth/right_road_person.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }

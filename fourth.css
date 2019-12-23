@@ -1,120 +1,119 @@
 .fourthfloor {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fourth/fourthfloor.jpg);
     background-position: top, left;
-    z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .stair {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fourth/stair.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .stair4to3_1 {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fourth/4to3_1.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .stair4to3_2 {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fourth/4to3_2.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .stair4to5_1 {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fourth/4to5_1.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .stair4to5_2 {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fourth/4to5_2.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .left {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fourth/left.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .left_road {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fourth/left_road.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .right {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fourth/right.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .right_road {
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fourth/right_road.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .table{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fourth/table.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
 .trash_can{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./fourth/trash_can.jpg);
     background-position: top, left;
     z-index: 1;
-    margin-left: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
+    float: left;
 }
