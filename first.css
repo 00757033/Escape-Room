@@ -36,31 +36,26 @@
     margin-top: 50px;
  }
  .button_where{
-     position: relative;
      bottom: -51%;
      right: -55%;
      text-align: center;
  }
  .button_hint{
-    position: relative;
     bottom: -51%;
     right: -55%;
     text-align: center;
  }
  .button_text{
-    position: relative;
     bottom: -51%;
     right: -55%;
     text-align: center;
  }
  .button_giveup{
-    position: relative;
     bottom: -51%;
     right: -55%;
     text-align: center;
  }
  .text_answer{
-    position: relative;
     bottom: -51%;
     right: -55%;
  }
@@ -68,7 +63,6 @@
     background-color: lemonchiffon;
     width: 55%;
     height: 250px;
-    position: relative;
     bottom: 75%;
     right: 30%;
     font-family: Calibri;
@@ -79,8 +73,7 @@
  .hint_list_1{
     background-color: lemonchiffon;
     width: 55%;
-    height: 250px;
-    position: relative;
+    height: 250px; 
     bottom: 75%;
     right: 30%;
     font-family: Calibri;
@@ -92,7 +85,6 @@
     background-color: #df5959;
     width: 55%;
     height: 100px;
-    position: relative;
     bottom: 70%;
     right: 30%;
     font-family: Calibri;
@@ -104,7 +96,6 @@
     background-color: #59df81;
     width: 55%;
     height: 100px;
-    position: relative;
     bottom: 70%;
     right: 30%;
     font-family: Calibri;
