@@ -43,12 +43,3 @@ body{
    height: 50px;
    width: 800px;
  }
- table{
-    border: 2px solid #407DA9;
- }
- th{
-   background-color: #768792
- }
-div{
-  position: fixed;
- }
