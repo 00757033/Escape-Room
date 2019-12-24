@@ -28,3 +28,38 @@
     background-size: 100%;
     background-repeat: no-repeat;
 }
+.code_f{
+    height: 700px;
+    width: 750px;
+    background-image: url(./second/mac/code_f.png);
+    background-position: top, left;
+    z-index: 1;
+    margin-left: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.text_answer{
+    position:relative;
+    bottom: -40%;
+    right: -35%;
+}
+.button_text{
+   height: 20px;
+   width: 20px;
+   position: relative;
+   bottom:  100%;
+   right: -25%;
+   text-align: center;
+}
+.result_list_f{
+   background-color: #df5959;
+   width: 55%;
+   height: 100px;
+   position: relative;
+   bottom: 70%;
+   right: 30%;
+   font-family: Calibri;
+   font-size: 62px;
+   text-align: center;
+   font-weight: bold;
+}
