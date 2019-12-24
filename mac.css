@@ -36,15 +36,13 @@
 }
 .text_answer{
     position:relative;
-    bottom: -40%;
+    bottom: -50%;
     right: -35%;
 }
 .button_text{
-   height: 20px;
-   width: 20px;
    position: relative;
-   bottom:  100%;
-   right: -25%;
+   bottom: -50%;
+    right: -35%;
    text-align: center;
 }
 .result_list_f{
