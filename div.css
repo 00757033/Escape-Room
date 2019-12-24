@@ -3,7 +3,6 @@
     height: 600px;
     width: 400px;
     margin: 0;
-    float: left;
  }
  .rightdiv{
    text-align: center;
@@ -23,6 +22,4 @@
    text-align: center;
    margin-left:400px;
    height: 50px;
-   width: 800px;
-   float: left;
  }

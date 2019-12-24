@@ -25,10 +25,6 @@ function clickpic(e) {
             set_text(e);
         }
     }
-    else{   
-        e.target.setAttribute("class", "class205");
-        e.target.setAttribute("id", "class205");
-    }
 }
 
 function set_text(e){

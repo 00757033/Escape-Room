@@ -1,40 +1,36 @@
 .class205{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/class_205.jpg);
     background-position: top, left;
-    z-index: 1;
-    margin-left: 400px;
+    float: left;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 .mac{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/mac/mac_screen.jpg);
     background-position: top, left;
-    z-index: 1;
-    margin-left: 400px;
+    float: left;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 .screen{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/mac/mac_desktop.png);
     background-position: top, left;
-    z-index: 1;
-    margin-left: 400px;
+    float: left;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 .code_f{
-    height: 700px;
-    width: 750px;
+    height: 600px;
+    width: 800px;
     background-image: url(./second/mac/code_f.png);
     background-position: top, left;
-    z-index: 1;
-    margin-left: 400px;
+    float: left;
     background-size: 100%;
     background-repeat: no-repeat;
 }
