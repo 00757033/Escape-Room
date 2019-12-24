@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("p").mousedown(function(){
+    $("#lediv").mousedown(function(){
       $("#leftdiv").toggle();
     });
     var inner ='';
@@ -24,7 +24,7 @@ $(document).ready(function(){
       }
     var message='';
     message='<p id="backpack" class="backpack" ><em>backpack</em></p>';
-      $("#lediv").html(message);
+    $("#lediv").html(message);
 });
 function tobackpack(img){
   var check=0;
