@@ -71,11 +71,11 @@ function clickpic(e) {
 }
 
 function set_button(e){
-    var inner = "<div class = 'button_where'><input id = 'where' type = 'button' value = '我不在這裡'></div>";
-    inner += "<div class = 'button_hint'><input id = 'hint' type = 'button' value = '我需要提示'></div>";
-    inner += "<div class = 'button_text'><input id = 'ans_b' type = 'button' value = '確認輸入'></div>";
-    inner += "<div class = 'text_answer'><input id = 'ans' type = 'text' placeholder = '限輸入英文'></div>";
-    document.getElementById("onmachine").innerHTML = inner;
+    var inner = "<input id = 'where' type = 'button' value = '我不在這裡' class = 'button_where'>";
+    inner += "<input id = 'hint' type = 'button' value = '我需要提示' class = 'button_hint'>";
+    inner += "<input id = 'ans_b' type = 'button' value = '確認輸入' class = 'button_text'>";
+    inner += "<input id = 'ans' type = 'text' placeholder = '限輸入英文' class = 'text_answer'>";
+    document.getElementById("coin").innerHTML = inner;
     document.getElementById("where").addEventListener("click", place_hint, false);
     document.getElementById("hint").addEventListener("click", hints, false);
     document.getElementById("ans_b").addEventListener("click", check_ans, false);

@@ -7,6 +7,8 @@
     background-repeat: no-repeat;
     text-align: center;
     float: left;
+    margin-left:500px;
+    margin-top: 50px;
  }
  .coin {
    height: 600px;
@@ -19,6 +21,8 @@
      float: left;
      font-family: Calibri;
     font-size: 25px;
+    margin-left:500px;
+    margin-top: 50px;
  }
  .coin_1 {
    height: 600px;
@@ -28,44 +32,37 @@
      background-size: 100%;
      background-repeat: no-repeat;
      float: left;
-     
+     margin-left:500px;
+    margin-top: 50px;
  }
  .button_where{
-     height: 20px;
-     width: 50px;
      position: relative;
-     bottom: 115%;
-     right: -35%;
+     bottom: -51%;
+     right: -55%;
      text-align: center;
  }
  .button_hint{
-    height: 20px;
-    width: 50px;
     position: relative;
-    bottom: 50%;
-    right: -20%;
+    bottom: -51%;
+    right: -55%;
     text-align: center;
  }
  .button_text{
-    height: 20px;
-    width: 20px;
     position: relative;
-    bottom: 45%;
-    right: -25%;
+    bottom: -51%;
+    right: -55%;
     text-align: center;
  }
  .button_giveup{
-    height: 20px;
-    width: 50px;
     position: relative;
-    bottom: -40%;
-    right: 55%;
+    bottom: -51%;
+    right: -55%;
     text-align: center;
  }
  .text_answer{
     position: relative;
-    bottom: 51%;
-    right: 25%;
+    bottom: -51%;
+    right: -55%;
  }
  .hint_list{
     background-color: lemonchiffon;
@@ -124,6 +121,8 @@
      background-size: 100%;
      background-repeat: no-repeat;
      float: left;
+     margin-left:500px;
+    margin-top: 50px;
  }
  .stair1{
    height: 600px;
@@ -134,6 +133,8 @@
      background-size: 100%;
      background-repeat: no-repeat;
      float: left;
+     margin-left:500px;
+    margin-top: 50px;
  }
  .stair2{
    height: 600px;
@@ -143,6 +144,8 @@
      background-size: 100%;
      background-repeat: no-repeat;
      float: left;
+     margin-left:500px;
+    margin-top: 50px;
  }
  .information{
    height: 600px;
@@ -154,6 +157,8 @@
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    margin-left:500px;
+    margin-top: 50px;
  }
  .trash_can{
    height: 600px;
@@ -163,4 +168,6 @@
      background-size: 100%;
      background-repeat: no-repeat;
      float: left;
+     margin-left:500px;
+    margin-top: 50px;
  }

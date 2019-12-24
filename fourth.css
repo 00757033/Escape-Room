@@ -6,6 +6,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .stair {
     height: 600px;
@@ -16,6 +19,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .stair4to3_1 {
     height: 600px;
@@ -26,6 +32,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .stair4to3_2 {
     height: 600px;
@@ -36,6 +45,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .stair4to5_1 {
     height: 600px;
@@ -46,6 +58,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .stair4to5_2 {
     height: 600px;
@@ -56,6 +71,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .left {
     height: 600px;
@@ -66,6 +84,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .left_road {
     height: 600px;
@@ -76,6 +97,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .right {
     height: 600px;
@@ -86,6 +110,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .right_road {
     height: 600px;
@@ -96,6 +123,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .table{
     height: 600px;
@@ -106,6 +136,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .trash_can{
     height: 600px;
@@ -116,4 +149,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }

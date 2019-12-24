@@ -1,109 +1,132 @@
 .thirdfloor {
+    background-image: url(./third/thirdfloor.jpg);
     height: 600px;
     width: 800px;
-    background-image: url(./third/thirdfloor.jpg);
     background-position: top, left;
-    background-size: 100%;
+    background-size:100%;
     background-repeat: no-repeat;
+    text-align: center;
     float: left;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .stair3to4_1 {
     height: 600px;
     width: 800px;
     background-image: url(./third/3to4_1.jpg);
     background-position: top, left;
-    z-index: 1;
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .stair3to4_2 {
     height: 600px;
     width: 800px;
     background-image: url(./third/3to4_2.jpg);
     background-position: top, left;
-    z-index: 1;
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .left {
     height: 600px;
     width: 800px;
     background-image: url(./third/left.jpg);
     background-position: top, left;
-    z-index: 1;
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .left_road {
     height: 600px;
     width: 800px;
     background-image: url(./third/left_road.jpg);
     background-position: top, left;
-    z-index: 1;
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .right {
     height: 600px;
     width: 800px;
     background-image: url(./third/right.jpg);
     background-position: top, left;
-    z-index: 1;
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .right_road {
     height: 600px;
     width: 800px;
     background-image: url(./third/right_road.jpg);
     background-position: top, left;
-    z-index: 1;
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .rest_area{
     height: 600px;
     width: 800px;
     background-image: url(./third/rest_area.jpg);
     background-position: top, left;
-    z-index: 1;
     background-size: 100%;
     background-repeat: no-repeat; 
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .rest_area_ac {
     height: 600px;
     width: 800px;
     background-image: url(./third/rest_area_ac.jpg);
     background-position: top, left;
-    z-index: 1;
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .rest_area_chair {
     height: 600px;
     width: 800px;
     background-image: url(./third/rest_area_chair.jpg);
     background-position: top, left;
-    z-index: 1;
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .coin_machine {
     height: 600px;
     width: 800px;
     background-image: url(./third/coin_machine.jpg);
     background-position: top, left;
-    z-index: 1;
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
