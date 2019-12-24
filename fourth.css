@@ -75,6 +75,19 @@
     margin-left:500px;
     margin-top: 50px;
 }
+.stair5to4_2 {
+    height: 600px;
+    width: 800px;
+    background-image: url(./fifth/5to4_2.jpg);
+    background-position: top, left;
+    z-index: 1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
+}
 .left {
     height: 600px;
     width: 800px;
@@ -140,12 +153,37 @@
     margin-left:500px;
     margin-top: 50px;
 }
+.table_with_money{
+    height: 600px;
+    width: 800px;
+    background-image: url(./fourth/table_with_money.jpg);
+    background-position: top, left;
+    z-index: 1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
+}
 .trash_can{
     height: 600px;
     width: 800px;
     background-image: url(./fourth/trash_can.jpg);
     background-position: top, left;
     z-index: 1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
+}
+.stair3to4_2 {
+    height: 600px;
+    width: 800px;
+    background-image: url(./third/3to4_2.jpg);
+    background-position: top, left;
     background-size: 100%;
     background-repeat: no-repeat;
     float: left;

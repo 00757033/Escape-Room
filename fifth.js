@@ -6,7 +6,7 @@ function clickpic(e) {
         if((x>110 && x<220)&& (y>120 && y<340)){
             e.target.setAttribute("class", "left");
             e.target.setAttribute("id", "left");
-            $("#topdiv").text("試著點擊四周");
+            $("#topdiv").html("電機系館<br>試著點擊四周");
         }
         else if((x>590 && x<670)&& (y>125 && y<400)){
             e.target.setAttribute("class", "right");
@@ -34,6 +34,7 @@ function clickpic(e) {
     else if(e.target.getAttribute("id")=="left_road"){
         if((x>335 && x<435)&& (y>200 && y<310)){
         window.alert("走道盡頭摟!點擊 確定 可回到五樓大廳");
+        $("#topdiv").text("五樓大廳");
         e.target.setAttribute("id", "fifthfloor");
         e.target.setAttribute("class", "fifthfloor");
         }

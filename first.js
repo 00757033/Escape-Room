@@ -18,14 +18,6 @@ function clickpic(e) {
             e.target.setAttribute("class", "list");
             e.target.setAttribute("id", "list");
             $("#topdiv").html("恭喜你找到提示線索<br>再次點擊可將線索收入背包並回到大廳");
-            if ($("#td0").html() =='')
-            {
-                $("#td0").html('<img src="00.png" ></img>');
-            }
-            else {
-                $("#td1").html('<img src="00.png" ></img>');
-            }
-            console.log('#td0',$("#td0").html(),$("#td1").text());
             ////window.location.href='machine.html'
         }
         else if ((x > 145 && x < 215) && (y > 315 && y < 390))  {
@@ -40,6 +32,7 @@ function clickpic(e) {
             e.target.setAttribute("class", "information");
             e.target.setAttribute("id", "information");
             $("#topdiv").html("恭喜你找到提示線索<br>再次點擊可將線索收入背包並回到大廳");
+            
         }
         else if ((x > 546 && x < 575) && (y > 170 && y < 200)) {
             document.getElementById("onmachine").innerHTML = "";
@@ -63,6 +56,10 @@ function clickpic(e) {
         window.location.href='second.html';
     }
     else {
+        if (e.target.getAttribute("id") == "list")
+            tobackpack("./first/list.jpg");
+        if (e.target.getAttribute("id") == "information")
+            tobackpack("./first/paper.jpg");
         document.getElementById("onmachine").innerHTML = "";
         e.target.setAttribute("class", "firstfloor");
         e.target.setAttribute("id", "firstfloor");
@@ -71,11 +68,11 @@ function clickpic(e) {
 }
 
 function set_button(e){
-    var inner = "<input id = 'where' type = 'button' value = '我不在這裡' class = 'button_where'>";
-    inner += "<input id = 'hint' type = 'button' value = '我需要提示' class = 'button_hint'>";
-    inner += "<input id = 'ans_b' type = 'button' value = '確認輸入' class = 'button_text'>";
-    inner += "<input id = 'ans' type = 'text' placeholder = '限輸入英文' class = 'text_answer'>";
-    document.getElementById("coin").innerHTML = inner;
+    var inner = "<div class = 'button_where'><input id = 'where' type = 'button' value = '我不在這裡'></div>";
+    inner += "<div class = 'button_hint'><input id = 'hint' type = 'button' value = '我需要提示'></div>";
+    inner += "<div class = 'button_text'><input id = 'ans_b' type = 'button' value = '確認輸入'></div>";
+    inner += "<div class = 'text_answer'><input id = 'ans' type = 'text' placeholder = '限輸入英文'></div>";
+    document.getElementById("onmachine").innerHTML = inner;
     document.getElementById("where").addEventListener("click", place_hint, false);
     document.getElementById("hint").addEventListener("click", hints, false);
     document.getElementById("ans_b").addEventListener("click", check_ans, false);

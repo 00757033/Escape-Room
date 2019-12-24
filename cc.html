@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8" />
+    <title>Javascript計算器</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="4"><input id="show" value="0" /></td>
+        </tr>
+        <tr>
+            <td><button onclick="number(this)" value="7">7</button></td>
+            <td><button onclick="number(this)" value="8">8</button></td>
+            <td><button onclick="number(this)" value="9">9</button></td>
+            <td><button onclick="calsym(this)" value=" "> </button></td>
+        </tr>
+        <tr>
+            <td><button onclick="number(this)" value="4">4</button></td>
+            <td><button onclick="number(this)" value="5">5</button></td>
+            <td><button onclick="number(this)" value="6">6</button></td>
+            <td><button onclick="calsym(this)" value="-">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="number(this)" value="1">1</button></td>
+            <td><button onclick="number(this)" value="2">2</button></td>
+            <td><button onclick="number(this)" value="3">3</button></td>
+            <td><button onclick="calsym(this)" value="*">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="number(this)" value="0">0</button></td>
+            <td><button onclick="calsym(this)" value="=">=</button></td>
+            <td><button onclick="clearCal()" value="c">c</button></td>
+            <td><button onclick="calsym(this)" value="/">/</button></td>
+        </tr>
+    </table>
+</body>
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+    var num0 = null;
+    var num1 = null;
+    var symble = null;
+    var lastclick = null;
+    var symarr = new Array(); //符號集合 
+    symarr[0] = ' ';
+    symarr[1] = '/';
+    symarr[2] = '*';
+    symarr[3] = '-';
+    symarr[4] = '=';
+    function number(n) {
+        var numnow = $('#show');
+        var _exist = $.inArray(lastclick, symarr); //判斷上次點選是否為符號 
+        if (numnow.val() == 0 || _exist != -1) {//若顯示框為0 或者上次點選為符號，則重新記錄顯示框 
+            numnow.val($(n).val());
+        } else {
+            numnow.val(parseInt(numnow.val()) * 10  parseInt($(n).val()));
+        }
+        lastclick = $(n).val(); // 更新上次點選 
+    }
+    function calsym(cs) { //符號點選事件響應 
+        var numnow = $('#show');
+        var _exist = $.inArray(lastclick, symarr);
+        if (num0 == null && symble == null) { //初始狀態 
+            num0 = numnow.val();
+            symble = $(cs).val();
+        } else if (num0 != null && num1 == null && _exist != -1) { // 連續點操作符的處理，及第一次點選操作符處理 
+            symble = $(cs).val();
+        } else { //正常計算狀態 
+            num1 = numnow.val();
+            var result = calculate(symble, num0, num1);
+            symble = $(cs).val(); //上行及本行：先計算之前的運算子及結果，再更新運算子為本次點選 
+            num0 = result;
+            numnow.val(result);
+            num1 = null;
+        }
+        lastclick = $(cs).val(); // 更新上次點選 
+    }
+    function clearCal() { //清空函式 
+        $('#show').val('0');
+        num0 = null;
+        num1 = null;
+        symble = null;
+        lastclick = null;
+    }
+    function calculate(sym, m, n) { //計算並返回結果 
+        var res = null;
+        m = parseInt(m);
+        n = parseInt(n);
+        switch (sym) {
+            case '+':
+                res = m+n;
+                break;
+            case '-':
+                res = m - n;
+                break;
+            case '*':
+                res = m * n;
+                break;
+            case '/':
+                if (n == 0) {
+                    alert("false");
+                    break;
+                }
+                res = m / n;
+                break;
+            default:
+                break;
+        }
+        return res;
+    } 
+</script>
+
+</html>
