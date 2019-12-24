@@ -17,6 +17,8 @@
      background-size: 100%;
      background-repeat: no-repeat;
      float: left;
+     font-family: Calibri;
+    font-size: 25px;
  }
  .coin_1 {
    height: 600px;
@@ -26,6 +28,7 @@
      background-size: 100%;
      background-repeat: no-repeat;
      float: left;
+     
  }
  .button_where{
      height: 20px;
@@ -137,7 +140,6 @@
    width: 800px;
      background-image: url(./first/1to2_2.jpg);
      background-position: top, left;
-     z-index:1;
      background-size: 100%;
      background-repeat: no-repeat;
      float: left;
@@ -146,13 +148,13 @@
      width: 800px;
      height:800px;
      text-align: center;
+     float: left;
  }
  .information{
    height: 600px;
    width: 800px;
     background-image: url(./first/paper.jpg);
     background-position: top, left;
-    margin-left:400px;
     background-position:center;
     z-index:1;
     background-size: 100%;
@@ -164,7 +166,6 @@
    width: 800px;
      background-image: url(./first/trash_can.png);
      background-position:center;
-     z-index:1;
      background-size: 100%;
      background-repeat: no-repeat;
      float: left;

@@ -4,7 +4,7 @@ function clickpic(e) {
     var y = e.offsetY;
     console.log(x, y);
     if (e.target.getAttribute("id") == "firstfloor") {
-        if ((x > 450 && x < 570) && (y > 210 && y < 375))  {
+        if ((x > 450 && x < 615) && (y > 225 && y < 415))  {
             e.target.setAttribute("id", "coin");
             e.target.setAttribute("class", "coin");
             if(e.target.getAttribute("id")=="coin"){
@@ -12,19 +12,19 @@ function clickpic(e) {
             }
             ////window.location.href='machine.html'
         }
-        else if ((x > 3 && x <50) && (y > 20 && y < 325))  {
+        else if ((x > 0 && x <51) && (y > 15 && y < 370))  {
             document.getElementById("onmachine").innerHTML = "";
             e.target.setAttribute("class", "list");
             e.target.setAttribute("id", "list");
             ////window.location.href='machine.html'
         }
-        else if ((x > 140 && x < 195) && (y > 300 && y < 365))  {
+        else if ((x > 145 && x < 215) && (y > 315 && y < 390))  {
             document.getElementById("onmachine").innerHTML = "";
             e.target.setAttribute("class", "trash_can");
             e.target.setAttribute("id", "trash_can");
             ////window.location.href='machine.html'
         }
-        else if ((x > 280 && x < 420) && (y > 435 && y < 490)) {
+        else if ((x > 280 && x < 455) && (y > 460 && y < 515)) {
             document.getElementById("onmachine").innerHTML = "";
             e.target.setAttribute("class", "information");
             e.target.setAttribute("id", "information");
@@ -34,7 +34,7 @@ function clickpic(e) {
             e.target.setAttribute("class", "lightcontrol");
             e.target.setAttribute("id", "lightcontrol");
         }
-        else  if ((x > 680 && x < 750) && (y > 170 && y < 455)) {
+        else  if ((x > 720 && x < 800) && (y > 180 && y < 490)) {
             document.getElementById("onmachine").innerHTML = "";
             e.target.setAttribute("class", "stair1");
             e.target.setAttribute("id", "stair1");

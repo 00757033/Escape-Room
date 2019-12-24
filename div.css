@@ -12,7 +12,13 @@
  }
  .downdiv{
     margin-left:400px;
-    height: 100px;
+    height: 50px;
     width: 800px;
     float: left;
+ }
+ .topdiv{
+   margin-left:400px;
+   height: 50px;
+   width: 800px;
+   float: left;
  }
