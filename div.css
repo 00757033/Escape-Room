@@ -1,22 +1,26 @@
 .leftdiv{
+   text-align: center;
     height: 600px;
     width: 400px;
     margin: 0;
     float: left;
  }
  .rightdiv{
+   text-align: center;
     height: 600px;
     width: 300px;
     margin: 0;
     float: left;
  }
  .downdiv{
+   text-align: center;
     margin-left:400px;
     height: 50px;
     width: 800px;
     float: left;
  }
  .topdiv{
+   text-align: center;
    margin-left:400px;
    height: 50px;
    width: 800px;

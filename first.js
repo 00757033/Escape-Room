@@ -7,6 +7,7 @@ function clickpic(e) {
         if ((x > 450 && x < 615) && (y > 225 && y < 415))  {
             e.target.setAttribute("id", "coin");
             e.target.setAttribute("class", "coin");
+            $("#topdiv").text("試著回到一樓空間尋找線索");
             if(e.target.getAttribute("id")=="coin"){
                 set_button(e);
             }
@@ -16,18 +17,29 @@ function clickpic(e) {
             document.getElementById("onmachine").innerHTML = "";
             e.target.setAttribute("class", "list");
             e.target.setAttribute("id", "list");
+            $("#topdiv").html("恭喜你找到提示線索<br>再次點擊可將線索收入背包並回到大廳");
+            if ($("#td0").html() =='')
+            {
+                $("#td0").html('<img src="00.png" ></img>');
+            }
+            else {
+                $("#td1").html('<img src="00.png" ></img>');
+            }
+            console.log('#td0',$("#td0").html(),$("#td1").text());
             ////window.location.href='machine.html'
         }
         else if ((x > 145 && x < 215) && (y > 315 && y < 390))  {
             document.getElementById("onmachine").innerHTML = "";
             e.target.setAttribute("class", "trash_can");
             e.target.setAttribute("id", "trash_can");
+            $("#topdiv").text("哈哈哈被騙了吧");
             ////window.location.href='machine.html'
         }
         else if ((x > 280 && x < 455) && (y > 460 && y < 515)) {
             document.getElementById("onmachine").innerHTML = "";
             e.target.setAttribute("class", "information");
             e.target.setAttribute("id", "information");
+            $("#topdiv").html("恭喜你找到提示線索<br>再次點擊可將線索收入背包並回到大廳");
         }
         else if ((x > 546 && x < 575) && (y > 170 && y < 200)) {
             document.getElementById("onmachine").innerHTML = "";
@@ -38,12 +50,14 @@ function clickpic(e) {
             document.getElementById("onmachine").innerHTML = "";
             e.target.setAttribute("class", "stair1");
             e.target.setAttribute("id", "stair1");
+            $("#topdiv").text("再次點擊前往二樓");
         }
     }
     else if (e.target.getAttribute("id") == "stair1") {
         document.getElementById("onmachine").innerHTML = "";
         e.target.setAttribute("class", "stair2");
         e.target.setAttribute("id", "stair2");
+        $("#topdiv").text("再次點擊前往二樓");
     }
     else if (e.target.getAttribute("id") == "stair2"){
         window.location.href='second.html';
@@ -52,6 +66,7 @@ function clickpic(e) {
         document.getElementById("onmachine").innerHTML = "";
         e.target.setAttribute("class", "firstfloor");
         e.target.setAttribute("id", "firstfloor");
+        $("#topdiv").text("試著點擊周遭環境");
     }
 }
 
