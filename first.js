@@ -18,14 +18,6 @@ function clickpic(e) {
             e.target.setAttribute("class", "list");
             e.target.setAttribute("id", "list");
             $("#topdiv").html("恭喜你找到提示線索<br>再次點擊可將線索收入背包並回到大廳");
-            if ($("#td0").html() =='')
-            {
-                $("#td0").html('<img src="00.png" ></img>');
-            }
-            else {
-                $("#td1").html('<img src="00.png" ></img>');
-            }
-            console.log('#td0',$("#td0").html(),$("#td1").text());
             ////window.location.href='machine.html'
         }
         else if ((x > 145 && x < 215) && (y > 315 && y < 390))  {
@@ -40,6 +32,7 @@ function clickpic(e) {
             e.target.setAttribute("class", "information");
             e.target.setAttribute("id", "information");
             $("#topdiv").html("恭喜你找到提示線索<br>再次點擊可將線索收入背包並回到大廳");
+            
         }
         else if ((x > 546 && x < 575) && (y > 170 && y < 200)) {
             document.getElementById("onmachine").innerHTML = "";
@@ -63,6 +56,10 @@ function clickpic(e) {
         window.location.href='second.html';
     }
     else {
+        if (e.target.getAttribute("id") == "list")
+            tobackpack("./first/list.jpg");
+        if (e.target.getAttribute("id") == "information")
+            tobackpack("./first/paper.jpg");
         document.getElementById("onmachine").innerHTML = "";
         e.target.setAttribute("class", "firstfloor");
         e.target.setAttribute("id", "firstfloor");

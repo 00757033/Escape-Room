@@ -6,43 +6,53 @@ function clickpic(e) {
         if((x>6 && x<105 )&&(y>125 && y<420)){
             e.target.setAttribute("class", "stair2to3_1");
             e.target.setAttribute("id", "stair2to3_1");
+            $("#topdiv").text("再次點擊前往三樓");
         }
         else if((x>485 && x<750 )&&(y>100 && y<400)){
             e.target.setAttribute("class", "secondfloor_1");
             e.target.setAttribute("id", "secondfloor_1");
+            $("#topdiv").text("點擊四周");
         }
     }
     else if (e.target.getAttribute("id")=="secondfloor_1") {
         if (((x > 85 && x < 135) && (y > 185 && y < 220)) || ((x > 1 && x < 95) && (y > 165 && y < 420))) {
             e.target.setAttribute("class", "road");
             e.target.setAttribute("id", "road");
+            $("#topdiv").text("輸入教室號碼");
             setTimeout(classroom, 1000);
             ////window.location.href='machine.html'
         }
         else if((x > 110 && x < 185) && (y > 320 && y < 415)){
             e.target.setAttribute("class", "Fire_Extinguisher");
             e.target.setAttribute("id", "Fire_Extinguisher");
+            $("#topdiv").text("再次點擊獲得滅火器一個");
         }
         else if((x > 300 && x <625) && (y > 180 && y < 400)){
             e.target.setAttribute("class", "elevator");
             e.target.setAttribute("id", "elevator");
+            $("#topdiv").text("無法搭乘電梯喔");
         }
     }
-    else if (e.target.getAttribute("id")=="Fire_Extinguisher"|| e.target.getAttribute("id")=="elevator"){
+    else if (e.target.getAttribute("id")=="Fire_Extinguisher"){
         e.target.setAttribute("class", "secondfloor_1");
         e.target.setAttribute("id", "secondfloor_1");
+         $("#topdiv").text("回到二樓大廳");
+         tobackpack("./second/Fire_Extinguisher.png");
     }
     else if (e.target.getAttribute("id")=="stair2to3_1"){
         e.target.setAttribute("class", "stair2to3_2");
         e.target.setAttribute("id", "stair2to3_2");
+        $("#topdiv").text("再次點擊前往三樓");
     }
     else if (e.target.getAttribute("id")=="class201"||
         e.target.getAttribute("id")=="class203"||
         e.target.getAttribute("id")=="class210A"|| 
         e.target.getAttribute("id")=="class210B"||
-        e.target.getAttribute("id")=="class212"){
+        e.target.getAttribute("id")=="class212"||
+        e.target.getAttribute("id")=="elevator"){
         e.target.setAttribute("class", "secondfloor");
         e.target.setAttribute("id", "secondfloor");
+        $("#topdiv").text("回到二樓大廳");
     }
     else if (e.target.getAttribute("id") == "stair2to3_2"){
         window.location.href='third.html';

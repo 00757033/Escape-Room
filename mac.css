@@ -6,6 +6,9 @@
     float: left;
     background-size: 100%;
     background-repeat: no-repeat;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .mac{
     height: 600px;
@@ -15,6 +18,9 @@
     float: left;
     background-size: 100%;
     background-repeat: no-repeat;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .screen{
     height: 600px;
@@ -24,6 +30,9 @@
     float: left;
     background-size: 100%;
     background-repeat: no-repeat;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .code_f{
     height: 600px;
@@ -33,18 +42,19 @@
     float: left;
     background-size: 100%;
     background-repeat: no-repeat;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
 .text_answer{
     position:relative;
-    bottom: -40%;
+    bottom: -50%;
     right: -35%;
 }
 .button_text{
-   height: 20px;
-   width: 20px;
    position: relative;
-   bottom:  100%;
-   right: -25%;
+   bottom: -50%;
+    right: -35%;
    text-align: center;
 }
 .result_list_f{
