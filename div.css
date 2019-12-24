@@ -49,3 +49,16 @@ body{
    width: 800px;
    position: fixed;
  }
+ table{
+    border: 3px solid #16BEB0;
+    background-color: #16BEB0;
+ }
+ th{
+  font-size: 25px;
+    border: 5px solid #16BEB0;
+   background-color: #16BEB0
+ }
+ td{
+  border: 5px solid #16BEB0;
+   background-color: #2F61B0;
+ }
