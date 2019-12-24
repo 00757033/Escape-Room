@@ -9,6 +9,7 @@ body{
     height: 600px;
     width: 500px;
     margin: 0;
+    float: left;
  }
  .rightdiv{
    text-align: center;
