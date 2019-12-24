@@ -34,8 +34,8 @@
      height: 20px;
      width: 50px;
      position: relative;
-     bottom: 51%;
-     right: -20%;
+     bottom: 115%;
+     right: -35%;
      text-align: center;
  }
  .button_hint{
@@ -142,12 +142,6 @@
      background-position: top, left;
      background-size: 100%;
      background-repeat: no-repeat;
-     float: left;
- }
- div{
-     width: 800px;
-     height:800px;
-     text-align: center;
      float: left;
  }
  .information{
