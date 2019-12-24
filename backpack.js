@@ -15,26 +15,27 @@ $(document).ready(function () {
           $("#coun").html("關閉計算機");
       });
     });
+    
   
   var inner = '';
   inner = '<table  border="2" width="500" height="550" id="backpackpic" class="backpackpic">';
   inner += '<tr><th colspan = "4" height="10">backpack</th></tr>';
   inner += '<tr rowspan = "2"   >';
-  inner += '<td height="120"  width="166" id="td0"></td>';
-  inner += '<td height="120"  width="166" id="td1"></td>';
-  inner += '<td height="120"  width="166" id="td2"></td>';
+  inner += '<td height="90"  width="150" id="td0"></td>';
+  inner += '<td height="90"  width="150" id="td1"></td>';
+  inner += '<td height="90"  width="150" id="td2"></td>';
   inner += '</tr>';
   inner += '<tr rowspan = "2"  >';
-  inner += '<td height="120"  width="166" id="td3"></td>';
-  inner += '<td height="120"  width="166" id="td4"></td>';
-  inner += '<td height="120"  width="166" id="td5"></td>';
+  inner += '<td height="90"  width="150" id="td3"></td>';
+  inner += '<td height="90"  width="150" id="td4"></td>';
+  inner += '<td height="90"  width="150" id="td5"></td>';
   inner += '</tr>';
-  inner += '<tr rowspan = "2"><td colspan = "4"></td> </tr>';
+  inner += '<tr rowspan = "2"><td colspan = "4" id="td6"></td> </tr>';
   inner += '</table>';
   $("#leftdiv").html(inner);
   console.log(localStorage.length);
   for (var i = 0, j = 0; i < localStorage.length; i++) {
-    $(localStorage.getItem(localStorage.key(i))).html("<img src=" + localStorage.key(i) + " height='166'" + " width='125'></img>");
+    $(localStorage.getItem(localStorage.key(i))).html("<img src=" + localStorage.key(i) + " height='90'" + " width='150'></img>");
   }
   var message = '';
   message = '<p id="backpack" class="backpack" >關閉背包</p>';
@@ -44,6 +45,49 @@ $(document).ready(function () {
   $("#lediv2").html(message);
   var calcinner;
  
+  $("#td0").click(function () {
+    for (var i = 0, j = 0; i < localStorage.length; i++) {
+      if (localStorage.getItem(localStorage.key(i)) == "#td0")
+    $("#td6").html("<img src=" + localStorage.key(i) + " height='240'" + " width='480'></img>");
+  }
+  });
+  $("#td0").click(function () {
+    for (var i = 0, j = 0; i < localStorage.length; i++) {
+      if (localStorage.getItem(localStorage.key(i)) == "#td0")
+    $("#td6").html("<img src=" + localStorage.key(i) + " height='240'" + " width='480'></img>");
+  }
+  });
+  $("#td1").click(function () {
+    for (var i = 0, j = 0; i < localStorage.length; i++) {
+      if (localStorage.getItem(localStorage.key(i)) == "#td1")
+    $("#td6").html("<img src=" + localStorage.key(i) + " height='240'" + " width='480'></img>");
+  }
+  });
+  $("#td2").click(function () {
+    for (var i = 0, j = 0; i < localStorage.length; i++) {
+      if (localStorage.getItem(localStorage.key(i)) == "#td2")
+    $("#td6").html("<img src=" + localStorage.key(i) + " height='240'" + " width='480'></img>");
+  }
+  });
+  $("#td3").click(function () {
+    for (var i = 0, j = 0; i < localStorage.length; i++) {
+      if (localStorage.getItem(localStorage.key(i)) == "#td3")
+    $("#td6").html("<img src=" + localStorage.key(i) + " height='240'" + " width='480'></img>");
+  }
+  });
+  $("#td4").click(function () {
+    for (var i = 0, j = 0; i < localStorage.length; i++) {
+      if (localStorage.getItem(localStorage.key(i)) == "#td4")
+    $("#td6").html("<img src=" + localStorage.key(i) + " height='240'" + " width='480'></img>");
+  }
+  });
+  $("#td5").click(function () {
+    for (var i = 0, j = 0; i < localStorage.length; i++) {
+      if (localStorage.getItem(localStorage.key(i)) == "#td5")
+    $("#td6").html("<img src=" + localStorage.key(i) + " height='240'" + " width='480'></img>");
+  }
+  });
+
   calcinner='<form name="calc" id="calculate">'+ '<div align="center"> '+'<center> ';
   calcinner+='<p id="cal"></p>';
   calcinner += '<table border="1" bordercolor="#808000" cellpadding="0">';
@@ -104,7 +148,7 @@ function tobackpack(img) {
   if (!check) {
     for (var i = 0; i < 6; i++) {
       if ($("#td" + i).html() == '') {
-        $("#td" + i).html("<img src=" + img + " height='166'" + " width='125'></img>");
+        $("#td" + i).html("<img src=" + img + " height='90'" + " width='160'></img>");
         localStorage.setItem(img, "#td" + i);
         break;
       }
