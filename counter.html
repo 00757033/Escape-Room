@@ -1,124 +1,56 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+  <!--設置字符格式-->
+  <meta charset="utf-8">
+  <!--調入css樣式-->
+ <link href="calc.css" rel="stylesheet">
+ </head>
+ 
+ <body>
+ <div id="calculator">
+     <div class="logo">
+         <span class="name">JavaScript簡易計算器</span>
+     </div>
+     <div id="import">
+         <!--screen輸入欄-->
+         <div class="screen">
+             <input type="text" id="screenName" name="screenName" class="screen">
+         </div>
+     </div>
+     <div id="keys">
+         <!--第一排-->
+         <input type="button" id="7" onclick="jsq(this.id)" value="7" class="buttons">
+         <input type="button" id="8" onclick="jsq(this.id)" value="8" class="buttons">
+         <input type="button" id="9" onclick="jsq(this.id)" value="9" class="buttons">
+         <input type="button" id="Back" onclick="tuiGe()" value="Back" class="buttons">
+         <input type="button" id="C" onclick="clearNum()" value="C" class="buttons" style="margin-right:0px">
+         <!--第二排-->
+         <input type="button" id="4" onclick="jsq(this.id)" value="4" class="buttons">
+         <input type="button" id="5" onclick="jsq(this.id)" value="5" class="buttons">
+         <input type="button" id="6" onclick="jsq(this.id)" value="6" class="buttons">
+         <input type="button" id="*" onclick="jsq(this.id)" value="*" class="buttons">
+         <input type="button" id="/" onclick="jsq(this.id)" value="/" class="buttons" style="margin-right:0px">
+         <!--第三排-->
+         <input type="button" id="1" onclick="jsq(this.id)" value="1" class="buttons">
+         <input type="button" id="2" onclick="jsq(this.id)" value="2" class="buttons">
+         <input type="button" id="3" onclick="jsq(this.id)" value="3" class="buttons">
+         <input type="button" id="+" onclick="jsq(this.id)" value="+" class="buttons">
+        <input type="button" id="-" onclick="jsq(this.id)" value="-" class="buttons" style="margin-right:0px">
+         <!--第四排-->
+         <input type="button" id="0" onclick="jsq(this.id)" value="0" class="buttons">
+         <input type="button" id="00" onclick="jsq(this.id)" value="00" class="buttons">
+         <input type="button" id="." onclick="jsq(this.id)" value="." class="buttons">
+         <input type="button" id="%" onclick="jsq(this.id)" value="%" class="buttons">
+         <input type="button" id="eva" onclick="eva()" value="=" class="buttons" style="margin-right:0px">
+     </div>
+     <div class="footer">
+         <span class="aside">歡迎使用JavaScript簡易計算器</span>
+     </div>
+ </div>
+ <!--調用js文件-->
+<script src="calc.js"></script>
+</body>
 
-  <script language="JavaScript"> 
-    var answer=0 
-    var lastvalue=0 
-    var op="+" 
-    var lastop="+" 
-    var newnumber=true 
-     
-    function input(digit){ 
-    if (op==" = ") 
-    clearall() 
-    if ((!newnumber)&&(document.calc.result.value!="0")) 
-    document.calc.result.value+=eval(digit) 
-    else 
-    document.calc.result.value=""+eval(digit) 
-    newnumber=false 
-    } 
-     
-    function clearnow(){ 
-    document.calc.result.value="_" 
-    newnumber=true 
-    } 
-     
-    function clearall(){ 
-    answer=0 
-    lastop="+" 
-    op="+" 
-    clearnow() 
-    } 
-     
-    function operate(operation){ 
-    if ((newnumber!=true)||(op==" = ")) 
-    { 
-    answer=""+answer 
-    if ((operation!=" = ") && (op!=" = ")) 
-    { 
-    lastvalue=document.calc.result.value 
-    lastop=op 
-    answer=eval(answer+lastop+lastvalue) 
-    document.calc.result.value=answer 
-    } 
-    else if (operation==" = ") 
-    { 
-    if (op!=" = ") 
-    { 
-    lastop=op 
-    lastvalue=document.calc.result.value 
-    } 
-    answer=eval(answer+lastop+lastvalue) 
-    document.calc.result.value=answer 
-    } 
-    newnumber=true 
-    } 
-    op=operation 
-    } 
-     
-    function change(){ 
-    answer=-1*document.calc.result.value 
-    document.calc.result.value=answer 
-    } 
-     
-    function point(){ 
-    if (!newnumber) 
-    { 
-    number=document.calc.result.value 
-    if (number.indexOf('.')==-1) 
-    document.calc.result.value+="." 
-    }  
-    } 
-    // end hiding --> 
-    </script> 
-    <form name="calc"> 
-      <div align="center"> 
-        <center> 
-        <table border="1" bordercolor="#808000" cellpadding="0"> 
-          <tr> 
-            <td colspan="5"><input type="text" size="14" name="result" value="_" onFocus="blur()">
-          <tr> 
-            <td>
-            <input type="button" name="1" value=" 1 " onClick="input(this.value)">
-            <td>
-            <input type="button" name="2" value=" 2 " onClick="input(this.value)">
-            <td>
-            <input type="button" name="3" value=" 3 " onClick="input(this.value)">
-            <td>
-            <input type="button" name="CE" value=" CE " onClick="clearall()">
-            <td>
-            <input type="button" name="C" value=" C " onClick="clearnow()">
-          <tr> 
-            <td>
-            <input type="button" name="4" value=" 4 " onClick="input(this.value)">
-            <td>
-            <input type="button" name="5" value=" 5 " onClick="input(this.value)">
-            <td>
-            <input type="button" name="6" value=" 6 " onClick="input(this.value)">
-            <td>
-            <input type="button" name="sing" value=" +/- " onClick="change()">
-            <td>
-            <input type="button" name="=" value=" = " onClick="operate(this.value)">
-          <tr> 
-            <td>
-            <input type="button" name="7" value=" 7 " onClick="input(this.value)">
-            <td>
-            <input type="button" name="8" value=" 8 " onClick="input(this.value)">
-            <td>
-            <input type="button" name="9" value=" 9 " onClick="input(this.value)">
-            <td>
-            <input type="button" name="+" value=" + " onClick="operate(this.value)">
-            <td>
-            <input type="button" name="-" value=" - " onClick="operate(this.value)"><tr> 
-            <td colspan="2">
-            <input type="button" name="0" value=" 0 " onClick="input(this.value)">
-            <td>
-            <input type="button" name="." value=" . " onClick="point()">
-            <td>
-            <input type="button" name="*" value=" * " onClick="operate(this.value)">
-            <td>
-            <input type="button" name="/" value=" / " onClick="operate(this.value)">
-        </center> 
-    </form> 
-               <!-------JavaScript收集區 計算機_結束--------><br>         
-      <input onClick="javascript:this.form.txt.focus();this.form.txt.select();" type="button" value="全選"></p>
-    </body></html>           
-    
+ </html>
