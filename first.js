@@ -12,7 +12,7 @@ function clickpic(e) {
         if ((x > 450 && x < 615) && (y > 225 && y < 415))  {
             if(tools<2){
                 $("#topdiv").text("請先找到線索再來解題");
-            }
+            }            
             else{
                 inmachine = 1;
                 if(hint==0){
@@ -80,6 +80,20 @@ function clickpic(e) {
     }
     else if((hint_times>=1) || (enter==1)){
         if ((e.target.getAttribute("id") == "coin") || (e.target.getAttribute("id") == "coin_1")){
+            if(correct==1){   
+                console.log("19");             
+                document.getElementById("onmachine").innerHTML = "";
+                if(hint==0){
+                    var tmp = document.getElementById("coin");
+                }
+                else{
+                    var tmp = document.getElementById("coin_1");
+                }
+                tmp.innerHTML = "";
+                e.target.setAttribute("class", "firstfloor");
+                e.target.setAttribute("id", "firstfloor");
+                $("#topdiv").text("可以前往二樓囉~");
+            }
             console.log("72");
             document.getElementById("onmachine").innerHTML="";
         }
@@ -170,11 +184,11 @@ function check_ans(){
     console.log("result is "+result);
     var inner = "";
     if(result === "iMac"){
-        inner = "<div class = 'result_list_t'>正確</div>"
+        inner = "<div class = 'result_list_t'>AC</div>"
         correct = 1;
     }
     else{
-        inner = "<div class = 'result_list_f'>錯誤</div>"
+        inner = "<div class = 'result_list_f'>WA</div>"
     }
     document.getElementById("onmachine").innerHTML = inner;
 }
