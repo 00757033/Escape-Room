@@ -37,6 +37,7 @@ function set_text(e){
     inner += "<input id = 'ans_b' type = 'button' value = '確認輸入' class = 'button_text'>";
     console.log(inner);
     document.getElementById("code_f").innerHTML = inner;
+    document.getElementById("ans_b").addEventListener("click", check_ans, false);
 }
 
 function check_ans(){
@@ -45,11 +46,11 @@ function check_ans(){
     var inner = "<div class = 'text_answer'><input id = 'ans' type = 'text' placeholder = '請輸入正確的code'></div>";
     inner += "<div class = 'button_text'><input id = 'ans_b' type = 'button' value = '確認輸入'></div>";
     if((result === "arr[j]=arr[i];") || (result === "arr[j] = arr[i];")){
-        inner += ""
+        //inner += ""
         window.alert("輸入正確");
     }
     else{
-        inner += "<div class = 'result_list_f'>更改錯誤</div>"
+        //inner += "<div class = 'result_list_f'>更改錯誤</div>"
     }
-    document.getElementById("onmachine").innerHTML = inner;
+    //document.getElementById("onmachine").innerHTML = inner;
 }

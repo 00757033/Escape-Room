@@ -36,35 +36,41 @@
     margin-top: 50px;
  }
  .button_where{
-     bottom: -51%;
-     right: -55%;
-     text-align: center;
+   position: relative;
+   bottom: -55%;
+   right: -75%;
+   text-align: center;
  }
  .button_hint{
-    bottom: -51%;
-    right: -55%;
-    text-align: center;
+   position: relative;
+   bottom: -50%;
+   right: -64%;
+   text-align: center;
  }
  .button_text{
-    bottom: -51%;
-    right: -55%;
-    text-align: center;
+   position: relative;
+   bottom: -68%;
+   right: -55%;
+   text-align: center;
  }
  .button_giveup{
-    bottom: -51%;
-    right: -55%;
-    text-align: center;
+   position: relative;
+   bottom: -35%;
+   right: 0%;
+   text-align: center;
  }
  .text_answer{
-    bottom: -51%;
-    right: -55%;
+   position: relative;
+   bottom: -61%;
+   right: -40%;
  }
  .hint_list{
     background-color: lemonchiffon;
-    width: 55%;
+    float: left;
+    margin-left:525px;
+    margin-top: -550px;
+    width: 750px;
     height: 250px;
-    bottom: 75%;
-    right: 30%;
     font-family: Calibri;
     font-size: 25px;
     text-align: left;
@@ -72,10 +78,11 @@
  }
  .hint_list_1{
     background-color: lemonchiffon;
-    width: 55%;
-    height: 250px; 
-    bottom: 75%;
-    right: 30%;
+    float: left;
+    margin-left:525px;
+    margin-top: -550px;
+    width: 750px;
+    height: 250px;
     font-family: Calibri;
     font-size: 65px;
     text-align: center;
@@ -83,23 +90,25 @@
  }
  .result_list_f{
     background-color: #df5959;
-    width: 55%;
-    height: 100px;
-    bottom: 70%;
-    right: 30%;
+    float: left;
+    margin-left:525px;
+    margin-top: -550px;
+    width: 750px;
+    height: 250px;
     font-family: Calibri;
-    font-size: 62px;
+    font-size: 120px;
     text-align: center;
     font-weight: bold;
  }
  .result_list_t{
     background-color: #59df81;
-    width: 55%;
-    height: 100px;
-    bottom: 70%;
-    right: 30%;
+    float: left;
+    margin-left:525px;
+    margin-top: -550px;
+    width: 750px;
+    height: 250px;
     font-family: Calibri;
-    font-size: 62px;
+    font-size: 120px;
     text-align: center;
     font-weight: bold;
  }
