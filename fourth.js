@@ -136,14 +136,23 @@ function clickpic(e) {
         if((x>305 && x<415) &&(y>205 && y<325)){
         e.target.setAttribute("class", "right_road");
         e.target.setAttribute("id", "right_road");
-        $("#topdiv").text("尋找錢幣");
+        $("#topdiv").text("試著點擊桌子");
         }
     }
     else if (e.target.getAttribute("id")=="right_road"){
         if((x>=155 && x<340) &&(y>270 && y<510)){
+        if(localStorage.getItem("./backpack/money.jpg") ||
+        localStorage.getItem("./backpack/coffe_blue.jpg")||
+        localStorage.getItem("./backpack/coffe_black.jpg") ){
+            e.target.setAttribute("class", "table");
+            e.target.setAttribute("id", "table");
+            $("#topdiv").text("這是一張桌子");
+        }
+         else{  
             $("#topdiv").text("點擊錢幣");
             e.target.setAttribute("class", "table_with_money");
             e.target.setAttribute("id", "table_with_money");
+        }
         }
         else if((x>320 && x<420) &&(y>200 && y<310)){
             $("#topdiv").text("四樓大廳");
@@ -156,7 +165,7 @@ function clickpic(e) {
         $("#topdiv").html("恭喜撿到二十元<br>點擊任意處回到四樓大廳");
         e.target.setAttribute("class", "table");
         e.target.setAttribute("id", "table");
-        tobackpack("./fourth/table_with_money.jpg");
+        tobackpack("./backpack/money.jpg");
     }
     else if (e.target.getAttribute("id")=="table"){
         $("#topdiv").text("四樓大廳");

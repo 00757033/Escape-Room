@@ -130,3 +130,13 @@
     margin-left:500px;
     margin-top: 50px;
 }
+#buttom_coin{
+    height: 200px;
+    width: 200px;
+}
+input {
+    height: 45px;
+    width: 50px;
+    border: none;
+    margin:0;
+}

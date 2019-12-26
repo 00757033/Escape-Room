@@ -1,4 +1,15 @@
 $(document).ready(function () {
+  create_backpack();
+  for (var i = 0, j = 0; i < localStorage.length; i++) {
+    $(localStorage.getItem(localStorage.key(i))).html("<img src=" + localStorage.key(i) + " height='90'" + " width='150'></img>");
+  }
+  add_backpack();
+  information();
+  computer();
+  $("#calculate").hide();
+  $("#calculate").hide();
+  $("#leftdiv").hide();
+  computer_show();
   $("#lediv1").mousedown(function () {
     $("#leftdiv").toggle(function () {
       if ($("#backpack").html() == "關閉背包")
@@ -6,17 +17,10 @@ $(document).ready(function () {
       else
         $("#backpack").html("關閉背包");
     });
-   });
-    $("#lediv2").mousedown(function () {
-      $("#rightdiv").toggle(function () {
-        if ($("#coun").html() == "關閉計算機")
-          $("#coun").html("開啟計算機");
-        else
-          $("#coun").html("關閉計算機");
-      });
-    });
-    
-  
+  });
+  button_click_show();
+});
+function create_backpack() {
   var inner = '';
   inner = '<table  border="0" width="500" height="550" id="backpackpic" class="backpackpic">';
   inner += '<tr><th colspan = "4" height="10">backpack</th></tr>';
@@ -33,63 +37,135 @@ $(document).ready(function () {
   inner += '<tr rowspan = "2"><td colspan = "4" id="td6"></td> </tr>';
   inner += '</table>';
   $("#leftdiv").html(inner);
-  console.log(localStorage.length);
-  for (var i = 0, j = 0; i < localStorage.length; i++) {
-    $(localStorage.getItem(localStorage.key(i))).html("<img src=" + localStorage.key(i) + " height='90'" + " width='150'></img>");
-  }
+}
+function information() {
   var message = '';
-  message = '<p id="backpack" class="backpack" >關閉背包</p>';
+  message = '<p id="backpack" class="backpack" >開啟背包</p>';
   $("#lediv1").html(message);
   var message = '';
-  message = '<p id="coun" class="coun" >關閉計算機</p>';
+  message = '<p id="coun" class="coun" >開啟計算機</p>';
   $("#lediv2").html(message);
-  var calcinner;
- 
-  $("#td0").click(function () {
-    for (var i = 0, j = 0; i < localStorage.length; i++) {
-      if (localStorage.getItem(localStorage.key(i)) == "#td0")
-    $("#td6").html("<img src=" + localStorage.key(i) + " height='240'" + " width='480'></img>");
+}
+function tobackpack(img) {
+  var check = 0;
+  for (var i = 0, j = 0; i < localStorage.length; i++) {
+    if (localStorage.key(i) == img)
+      check = 1;
   }
-  });
-  $("#td0").click(function () {
-    for (var i = 0, j = 0; i < localStorage.length; i++) {
-      if (localStorage.getItem(localStorage.key(i)) == "#td0")
-    $("#td6").html("<img src=" + localStorage.key(i) + " height='240'" + " width='480'></img>");
+  if (!check) {
+    for (var i = 0; i < 6; i++) {
+      if ($("#td" + i).html() == '') {
+        $("#td" + i).html("<img src=" + img + " height='90'" + " width='160'></img>");
+        localStorage.setItem(img, "#td" + i);
+        break;
+      }
+    }
   }
-  });
-  $("#td1").click(function () {
-    for (var i = 0, j = 0; i < localStorage.length; i++) {
-      if (localStorage.getItem(localStorage.key(i)) == "#td1")
-    $("#td6").html("<img src=" + localStorage.key(i) + " height='240'" + " width='480'></img>");
+  restart();
+}
+function computer_show() {
+  var local = location.pathname.split('/');
+  if (local[local.length - 1] != "first.html") {
+    $("#coun").css("color", "gray");
   }
+  $("#lediv1").mouseenter(function () {
+    $("#lediv1").css("cursor", "pointer");
   });
-  $("#td2").click(function () {
-    for (var i = 0, j = 0; i < localStorage.length; i++) {
-      if (localStorage.getItem(localStorage.key(i)) == "#td2")
-    $("#td6").html("<img src=" + localStorage.key(i) + " height='240'" + " width='480'></img>");
-  }
+  $("#lediv2").mouseenter(function () {
+    if (local[local.length - 1] == "first.html")
+      $("#lediv2").css("cursor", "pointer");
+    else
+      $("#lediv2").css("cursor", "default");
   });
-  $("#td3").click(function () {
-    for (var i = 0, j = 0; i < localStorage.length; i++) {
-      if (localStorage.getItem(localStorage.key(i)) == "#td3")
-    $("#td6").html("<img src=" + localStorage.key(i) + " height='240'" + " width='480'></img>");
-  }
+  $("#lediv2").mousedown(function () {
+    if (local[local.length - 1] == "first.html") {
+      $("#calculate").toggle(function () {
+        if ($("#coun").html() == "關閉計算機")
+          $("#coun").html("開啟計算機");
+        else
+          $("#coun").html("關閉計算機");
+      });
+    }
   });
-  $("#td4").click(function () {
-    for (var i = 0, j = 0; i < localStorage.length; i++) {
-      if (localStorage.getItem(localStorage.key(i)) == "#td4")
-    $("#td6").html("<img src=" + localStorage.key(i) + " height='240'" + " width='480'></img>");
-  }
-  });
-  $("#td5").click(function () {
-    for (var i = 0, j = 0; i < localStorage.length; i++) {
-      if (localStorage.getItem(localStorage.key(i)) == "#td5")
-    $("#td6").html("<img src=" + localStorage.key(i) + " height='240'" + " width='480'></img>");
-  }
-  });
+}
 
-  calcinner='<form name="calc" id="calculate">'+ '<div align="center"> '+'<center> ';
-  calcinner+='<p id="cal"></p>';
+var answer = 0;
+var lastvalue = 0;
+var op = "+";
+var lastop = "+";
+var newnumber = true;
+function input(digit) {
+  $("#cal").append(digit);
+  if (op == "=")
+    clearall();
+  if ((!newnumber) && (document.calc.result.value != "0"))
+    document.calc.result.value += eval(digit);
+  else
+    document.calc.result.value = "" + eval(digit);
+  console.log(document.calc.result.value);
+  newnumber = false;
+}
+
+function clearnow() {
+  $("#cal").html("");
+  document.calc.result.value = "_";
+  newnumber = true;
+}
+
+function clearall() {
+  answer = 0;
+  lastop = "+";
+  op = "+";
+  clearnow();
+}
+
+function operate(operation) {
+
+  $("#cal").append(operation);
+  if ((newnumber != true) || (op == " = ")) {
+    answer = "" + answer;
+
+    if ((operation != "=") && (op != "=")) {
+      lastvalue = document.calc.result.value;
+      lastop = op;
+      answer = eval(answer + lastop + lastvalue);
+      document.calc.result.value = answer;
+    }
+    else if (operation == "=") {
+      if (op != "=") {
+        lastop = op;
+        lastvalue = document.calc.result.value;
+      }
+      answer = eval(answer + lastop + lastvalue);
+      document.calc.result.value = answer;
+    }
+    newnumber = true;
+  }
+  op = operation;
+  if ((op == " = ")) {
+    $("#cal").append(answer);
+    console.log($("#cal").text(), answer);
+  }
+}
+
+function change() {
+  answer = -1 * document.calc.result.value;
+  document.calc.result.value = answer;
+}
+
+function point() {
+  if (!newnumber) {
+    number = document.calc.result.value;
+    if (number.indexOf('.') == -1)
+      document.calc.result.value += ".";
+    console.log(document.calc.result);
+  }
+}
+
+function computer() {
+  var calcinner;
+  calcinner = '<form name="calc" >' + '<div align="center" id="calculate"> ' + '<center> ';
+  calcinner += '<p id="cal"></p>';
   calcinner += '<table border="1" bordercolor="#808000" cellpadding="0">';
   calcinner += '<tr>';
   calcinner += '<td colspan="5"><input type="text" size="14" name="result" value="_" onFocus="blur()"></td></tr>';
@@ -116,115 +192,32 @@ $(document).ready(function () {
     '<td><input type="button" name="."  id="op0" value=" . " onClick="point()"></td>' +
     '<td><input type="button" name="*" id="op6"  value=" * " onClick="operate(this.value)"></td>' +
     '<td><input type="button" name="/" id="op7"  value=" / " onClick="operate(this.value)"></input></td></tr>';
-  calcinner += '</table>'+'</center>'+'</div>'+' </form> ';
- 
+  calcinner += '</table>' + '</center>' + '</div>' + ' </form> ';
+
   $("#rightdiv").html(calcinner);
-
-  $("#op2").click(function () {
-    for(var i=0;i<=9;i++)
-      $("#ban"+i).attr("disabled", true);
-      for(var i=2;i<=7;i++)
-      $("#op"+i).attr("disabled", true);
-  });
-  $("#op1").click(function () {
-    for(var i=0;i<=9;i++)
-      $("#ban"+i).attr("disabled", false);
-      for(var i=2;i<=7;i++)
-      $("#op"+i).attr("disabled",  false);
-  });
-  $("#op0").click(function () {
-    for(var i=0;i<=9;i++)
-      $("#ban"+i).attr("disabled", false);
-      for(var i=2;i<=7;i++)
-      $("#op"+i).attr("disabled",  false);
-  });
-});
-function tobackpack(img) {
-  var check = 0;
+}
+function button_click_show() {
+  for (var i = 0; i <= 2; i++)
+    $("#op" + i).click(function () {
+      for (var j = 0; j <= 9; j++) {
+        $("#ban" + j).attr("disabled", true);
+        if(j>=2 && j<=7)
+        $("#op" + j).attr("disabled", true);
+      }
+    });
+}
+function add_backpack() {
+  for (let i = 0; i <= 5; i++) {
+    $("#td" + i).click(function () {
+      for (var j = 0; j < localStorage.length; j++) {
+        if (localStorage.getItem(localStorage.key(j)) == "#td" + i)
+          $("#td6").html("<img src=" + localStorage.key(j) + " height='240'" + " width='480'></img>");
+      }
+    });
+  }
+}
+function restart(){
   for (var i = 0, j = 0; i < localStorage.length; i++) {
-    if (localStorage.key(i) == img)
-      check = 1;
-  }
-  if (!check) {
-    for (var i = 0; i < 6; i++) {
-      if ($("#td" + i).html() == '') {
-        $("#td" + i).html("<img src=" + img + " height='90'" + " width='160'></img>");
-        localStorage.setItem(img, "#td" + i);
-        break;
-      }
-    }
+    $(localStorage.getItem(localStorage.key(i))).html("<img src=" + localStorage.key(i) + " height='90'" + " width='150'></img>");
   }
 }
-var answer = 0;
-var lastvalue = 0;
-var op = "+";
-var lastop = "+";
-var newnumber = true;
-function input(digit) {
-  $("#cal").append(digit);
-  if (op == "=")
-    clearall();
-  if ((!newnumber) && (document.calc.result.value != "0"))
-    document.calc.result.value += eval(digit);
-  else
-    document.calc.result.value = "" + eval(digit);
-    console.log(document.calc.result.value);
-  newnumber = false;
-}
-
-function clearnow() {
-  $("#cal").html("");
-  document.calc.result.value = "_";
-  newnumber = true;
-}
-
-function clearall() {
-  answer = 0;
-  lastop = "+";
-  op = "+";
-  clearnow();
-}
-
-function operate(operation) {
-  
-  $("#cal").append(operation);
-  if ((newnumber != true) || (op == " = ")) {
-    answer = "" + answer;
-    
-    if ((operation != "=") && (op != "=")) {
-      lastvalue = document.calc.result.value;
-      lastop = op;
-      answer = eval(answer + lastop + lastvalue);
-      document.calc.result.value = answer;
-    }
-    else if (operation == "=") {
-      if (op != "=") {
-        lastop = op;
-        lastvalue = document.calc.result.value;
-      }
-      answer = eval(answer + lastop + lastvalue);
-      document.calc.result.value = answer;
-    }
-    newnumber = true;
-  }
-  op = operation;
-  if((op == " = "))
-    {
-      $("#cal").append(answer);
-      console.log($("#cal").text(),answer);
-    }
-}
-
-function change() {
-  answer = -1 * document.calc.result.value;
-  document.calc.result.value = answer;
-}
-
-function point() {
-  if (!newnumber) {
-    number = document.calc.result.value;
-    if (number.indexOf('.') == -1)
-      document.calc.result.value += ".";
-      console.log(document.calc.result);
-  }
-} 

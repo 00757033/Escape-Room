@@ -1,3 +1,7 @@
+$(document).ready(function () {
+    localStorage.setItem("mac_code",0);
+});
+
 function clickpic(e) {
     var x = e.offsetX;
     var y = e.offsetY;
@@ -20,6 +24,8 @@ function clickpic(e) {
             $("#topdiv").text("debug囉~");
             e.target.setAttribute("id", "code_f");
             e.target.setAttribute("class", "code_f");
+            //if(localStorage.getItem("mac_code")==0)
+                $("#topdiv").text("debug囉~");
         }
     }
     else if(e.target.getAttribute("id") == "code_f"){     
@@ -56,13 +62,19 @@ function set_text(e){
 
 function check_ans(){
     var result = document.getElementById("ans").value;
-    if((result === "arr[j]=arr[i];") || (result === "arr[j] = arr[i];")){
+    if( (result === "arr[j]=arr[i];")   ||
+        (result === "arr[j] = arr[i] ;")||
+        (result === "arr[j] = arr[i];") || 
+        (result === "arr[j] =arr[i];")  ||
+        (result === "arr[j] =arr[i] ;") ||
+        (result === "arr[j]= arr[i];")  ||
+        (result === "arr[j]= arr[i] ;") ){
         $("#topdiv").text("恭喜你成功了~ 試著編譯看看吧");
         var tmp = document.getElementById("code_f");
         tmp.setAttribute("id", "code_t");
         tmp.setAttribute("class", "code_t");        
         document.getElementById("code_t").innerHTML = "";
-        localStorage.setItem("mac_code", 1);
+        localStorage.setItem("mac_code",1);
     }
     else{        
         $("#topdiv").text("加油！ 再試試看吧");
