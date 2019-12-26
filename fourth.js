@@ -26,7 +26,6 @@ function clickpic(e) {
         /*else if((x>365 && x<440) &&(y>175 && y<330){
             //左邊教室
         }*/
-        
     }
     else if (e.target.getAttribute("id")=="stair"){
         if((x>0 && x<345) &&(y>145 && y<550)){
