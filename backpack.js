@@ -18,7 +18,7 @@ $(document).ready(function () {
     
   
   var inner = '';
-  inner = '<table  border="2" width="500" height="550" id="backpackpic" class="backpackpic">';
+  inner = '<table  border="0" width="500" height="550" id="backpackpic" class="backpackpic">';
   inner += '<tr><th colspan = "4" height="10">backpack</th></tr>';
   inner += '<tr rowspan = "2"   >';
   inner += '<td height="90"  width="150" id="td0"></td>';
