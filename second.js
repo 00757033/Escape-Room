@@ -4,15 +4,29 @@ function clickpic(e) {
     console.log(x,y);
     if (e.target.getAttribute("id")=="secondfloor"){
         if((x>6 && x<105 )&&(y>125 && y<420)){
-            e.target.setAttribute("class", "stair2to3_1");
-            e.target.setAttribute("id", "stair2to3_1");
-            $("#topdiv").text("再次點擊前往三樓");
+            var correct = 0;
+            for(var i = 0; i<localStorage.length; i++){
+                if(localStorage.key(i)==="mac_code"){
+                    correct = 1;
+                    break;
+                }
+            }
+            if(correct==1){            
+                e.target.setAttribute("class", "stair2to3_1");
+                e.target.setAttribute("id", "stair2to3_1");
+                $("#topdiv").text("再次點擊前往三樓");
+                localStorage.removeItem("mac_code");
+            }
+            else{
+                $("#topdiv").text("需要先解完謎才能去三樓喔");
+            }
         }
         else if((x>485 && x<750 )&&(y>100 && y<400)){
             e.target.setAttribute("class", "secondfloor_1");
             e.target.setAttribute("id", "secondfloor_1");
             $("#topdiv").text("點擊四周");
         }
+        
     }
     else if (e.target.getAttribute("id")=="secondfloor_1") {
         if (((x > 85 && x < 135) && (y > 185 && y < 220)) || ((x > 1 && x < 95) && (y > 165 && y < 420))) {
@@ -20,7 +34,6 @@ function clickpic(e) {
             e.target.setAttribute("id", "road");
             $("#topdiv").text("輸入教室號碼");
             setTimeout(classroom, 1000);
-            ////window.location.href='machine.html'
         }
         else if((x > 110 && x < 185) && (y > 320 && y < 415)){
             e.target.setAttribute("class", "Fire_Extinguisher");
@@ -37,7 +50,7 @@ function clickpic(e) {
         e.target.setAttribute("class", "secondfloor_1");
         e.target.setAttribute("id", "secondfloor_1");
          $("#topdiv").text("回到二樓大廳");
-         tobackpack("./second/Fire_Extinguisher.png");
+         tobackpack("./backpack/fire_extinguisher.jpg");
     }
     else if (e.target.getAttribute("id")=="stair2to3_1"){
         e.target.setAttribute("class", "stair2to3_2");
@@ -90,13 +103,4 @@ function classroom() {
         document.getElementById("road").setAttribute("id", "secondfloor");
         document.getElementById("secondfloor").setAttribute("class", "secondfloor");
     }
-}
-
-function set_button(){
-    var inner = "<img src='./second/mac_button.jpg' >";
-    document.getElementById("onmac").innerHTML = inner;
-}
-
-function tomac(){
-    console.log("91");
 }

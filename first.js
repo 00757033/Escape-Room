@@ -10,6 +10,18 @@ function clickpic(e) {
     var y = e.offsetY;
     if ((e.target.getAttribute("id") == "firstfloor")) {
         if ((x > 450 && x < 615) && (y > 225 && y < 415))  {
+            tools = 0;
+            for(var i = 0; i<localStorage.length; i++){
+                console.log("i is "+i+" "+localStorage.key(i));
+                if(localStorage.key(i)==="./backpack/paper.jpg"){
+                    tools++;
+                    console.log("tools++ paper");
+                }
+                else if(localStorage.key(i)==="./backpack/list.jpg"){
+                    tools++;
+                    console.log("tools++ list");
+                }
+            }
             if(tools<2){
                 $("#topdiv").text("請先找到線索再來解題");
             }            
