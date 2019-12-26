@@ -1,3 +1,13 @@
 .background{
-
+    height: 600px;
+    width: 800px;
+    background-image: url(./ending/test.png);
+    background-position: top, left;
+    z-index: 1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
 }
