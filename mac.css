@@ -46,15 +46,51 @@
     margin-left:500px;
     margin-top: 50px;
 }
+.code_t{
+    height: 600px;
+    width: 800px;
+    background-image: url(./second/mac/code_t.png);
+    background-position: top, left;
+    float: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
+}
+.result_f{
+    height: 600px;
+    width: 800px;
+    background-image: url(./second/mac/result_f.png);
+    background-position: top, left;
+    float: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
+}
+.result_t{
+    height: 600px;
+    width: 800px;
+    background-image: url(./second/mac/result_t.png);
+    background-position: top, left;
+    float: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    margin-left:500px;
+    margin-top: 50px;
+}
 .text_answer{
     position:relative;
-    bottom: -50%;
-    right: -35%;
+    bottom: -52%;
+    right: -40%;
 }
 .button_text{
    position: relative;
-   bottom: -50%;
-    right: -35%;
+   bottom: -52%;
+    right: -40%;
    text-align: center;
 }
 .result_list_f{
