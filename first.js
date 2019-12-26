@@ -156,9 +156,9 @@ function place_hint(e){
 }
 
 function hints(){
-    var tmp;
+    //var tmp;
     //if(hint==0){
-        //tmp = document.getElementById("coin");
+       // tmp = document.getElementById("coin");
     //}
     //else{
         //tmp = document.getElementById("coin_1");
