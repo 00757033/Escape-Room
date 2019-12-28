@@ -49,14 +49,15 @@ function clickpic(e) {
     }
     else if(e.target.getAttribute("id")=="right"){
          if((x>365 && x<430)&& (y>209 && y<280)){
-        $("#topdiv").text("怎麼有人坐在這 試著點擊他");
-        e.target.setAttribute("class", "right_road_person");
-        e.target.setAttribute("id", "right_road_person");
+            $("#topdiv").text("怎麼有人坐在這 試著點擊他");
+            e.target.setAttribute("class", "right_road_person");
+            e.target.setAttribute("id", "right_road_person");
          }
     }
     else if(e.target.getAttribute("id")=="right_road_person"){
         if((x>105 && x<445)&& (y>315 && y<495)){
-            window.location.href='dialog.html';
+            //window.location.href='dialog.html';
+            window.location.href='ending.html';
         }
     }
 }
