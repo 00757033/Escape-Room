@@ -9,7 +9,6 @@ function clickpic(e) {
     var y = e.offsetY;
     if ((e.target.getAttribute("id") == "firstfloor")) {
         if ((x > 450 && x < 615) && (y > 225 && y < 415) && check()) {
-            //console.log("hint",hint);
             inmachine = 1;
             if (hint == 0) {
                 e.target.setAttribute("id", "coin");
@@ -29,14 +28,12 @@ function clickpic(e) {
             e.target.setAttribute("class", "list");
             e.target.setAttribute("id", "list");
             $("#topdiv").html("恭喜你找到提示線索<br>再次點擊可將線索收入背包並回到大廳");
-            ////window.location.href='machine.html'
         }
         else if ((x > 145 && x < 215) && (y > 315 && y < 390)) {
             document.getElementById("onmachine").innerHTML = "";
             e.target.setAttribute("class", "trash_can");
             e.target.setAttribute("id", "trash_can");
             $("#topdiv").text("哈哈哈被騙了吧");
-            ////window.location.href='machine.html'
         }
         else if ((x > 280 && x < 455) && (y > 460 && y < 515)) {
             document.getElementById("onmachine").innerHTML = "";
@@ -72,9 +69,9 @@ function clickpic(e) {
         window.location.href = 'second.html';
     }
     else if ((hint_times >= 1) || (enter == 1)) {
+        console.log("hint_times is "+hint_times+" while enter is "+enter);
         if ((e.target.getAttribute("id") == "coin") || (e.target.getAttribute("id") == "coin_1")) {
             if (correct == 1) {
-                //console.log("19");
                 document.getElementById("onmachine").innerHTML = "";
                 if (hint == 0) {
                     var tmp = document.getElementById("coin");
@@ -85,15 +82,18 @@ function clickpic(e) {
                 tmp.innerHTML = "";
                 e.target.setAttribute("class", "firstfloor");
                 e.target.setAttribute("id", "firstfloor");
+                inmachine = 0;
+                enter = 0;
+                hint_times = 0;
                 $("#topdiv").text("可以前往二樓囉~");
             }
-            //console.log("72");
             document.getElementById("onmachine").innerHTML = "";
         }
     }
     else
-    { if (e.target.getAttribute("id") == "list")
+    {   if (e.target.getAttribute("id") == "list"){
             tobackpack("./backpack/list.jpg");
+        }
         if (e.target.getAttribute("id") == "information")
             tobackpack("./backpack/paper.jpg");
         document.getElementById("onmachine").innerHTML = "";
