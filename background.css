@@ -1,7 +1,8 @@
+
 .background{
     height: 600px;
     width: 800px;
-    background-image: url(./ending/test.png);
+    background-image: url(start.jpg);
     background-position: top, left;
     z-index: 1;
     background-size: 100%;
@@ -11,3 +12,15 @@
     margin-left:500px;
     margin-top: 50px;
 }
+input{
+    border:0;
+    background-color:#003C9D;
+    color:#fff;border-radius:10px;
+    margin-left:250px;
+    margin-top: 50px;
+    font-size:35px;
+    height: 30px;
+    width: 40px;
+}
+
+
