@@ -24,18 +24,18 @@ $(document).ready(function () {
 function create_backpack() {
   var inner = '';
   inner = '<table  border="0" width="500" height="550" id="backpackpic" class="backpackpic">';
-  inner += '<tr><th colspan = "4" height="10">backpack</th></tr>';
+  inner += '<tr><td colspan = "4" height="10">書包</td></tr>';
   inner += '<tr rowspan = "2"   >';
-  inner += '<td height="90"  width="150" id="td0"></td>';
-  inner += '<td height="90"  width="150" id="td1"></td>';
-  inner += '<td height="90"  width="150" id="td2"></td>';
+  inner += '<th height="90"  width="150" id="td0"></th>';
+  inner += '<th height="90"  width="150" id="td1"></th>';
+  inner += '<th height="90"  width="150" id="td2"></th>';
   inner += '</tr>';
   inner += '<tr rowspan = "2"  >';
-  inner += '<td height="90"  width="150" id="td3"></td>';
-  inner += '<td height="90"  width="150" id="td4"></td>';
-  inner += '<td height="90"  width="150" id="td5"></td>';
+  inner += '<th height="90"  width="150" id="td3"></th>';
+  inner += '<th height="90"  width="150" id="td4"></th>';
+  inner += '<th height="90"  width="150" id="td5"></th>';
   inner += '</tr>';
-  inner += '<tr rowspan = "2"><td colspan = "4" id="td6"></td> </tr>';
+  inner += '<tr rowspan = "2"><th colspan = "4" id="td6"></th> </tr>';
   inner += '</table>';
   $("#leftdiv").html(inner);
 }
