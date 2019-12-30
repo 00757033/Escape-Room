@@ -99,8 +99,8 @@ function clickpic(e) {
     }
 }
 function buttom() {
-    var buttom;
-    buttom += '<table border="1" bordercolor="#808000" cellpadding="0" id="buttom_coin">';
+    var buttom='';
+    buttom = '<table border="1" bordercolor="#808000" cellpadding="0" id="buttom_coin">';
     buttom += '<tbody width=100px>';
     buttom += '<tr>';
     buttom += '<td colspan="3" id="buttominf"></td>';
@@ -135,6 +135,7 @@ function check() {
             restart();
             $("#topdiv").text("獲得一杯咖啡");
         }
+        else
         $("#topdiv").text("去四樓找找看錢幣");
     }
     else if ($("#buttominf").html() == "24"){
@@ -144,6 +145,7 @@ function check() {
             restart();
             $("#topdiv").text("獲得一杯咖啡");
         }
+        else
         $("#topdiv").text("去四樓找找看錢幣");
     }
     else
