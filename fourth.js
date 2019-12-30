@@ -148,7 +148,7 @@ function clickpic(e) {
             $("#topdiv").text("這是一張桌子");
         }
          else{  
-            $("#topdiv").text("點擊錢幣");
+            $("#topdiv").text("尋找有沒有錢吧");
             e.target.setAttribute("class", "table_with_money");
             e.target.setAttribute("id", "table_with_money");
         }
