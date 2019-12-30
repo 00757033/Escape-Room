@@ -26,7 +26,7 @@ function clickpic(e) {
             e.target.setAttribute("class", "road");
             e.target.setAttribute("id", "road");
             $("#topdiv").text("輸入教室號碼");
-            setTimeout(classroom, 500);
+            setTimeout(classroom, 3000);
         }
         else if((x >= 130 && x < 205) && (y > 345 && y <=440)){
             e.target.setAttribute("class", "Fire_Extinguisher");
