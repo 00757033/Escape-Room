@@ -70,9 +70,9 @@ function clickpic(e) {
             e.target.setAttribute("class", "coin_machine");
             e.target.setAttribute("id", "coin_machine");
             if(localStorage.getItem("./backpack/coffe_blue.jpg"))
-            $("#topdiv").text("已獲得一杯咖啡1");
+            $("#topdiv").text("已獲得一杯咖啡");
             if(localStorage.getItem("./backpack/coffe_black.jpg"))
-            $("#topdiv").text("已獲得一杯咖啡2");
+            $("#topdiv").text("已獲得一杯咖啡");
             if(localStorage.getItem("./backpack/money.jpg"))
             $("#topdiv").text("使用左側按鈕 輸入飲料編號");
         }
@@ -94,8 +94,8 @@ function clickpic(e) {
         if ((x > 570 && x < 760) && (y > 490 && y < 550)) {
             window.open("./third/coin_machine_nobutton.jpg","放大圖片");
         }
-        //e.target.setAttribute("class", "thirdfloor");
-        //e.target.setAttribute("id", "thirdfloor");
+        e.target.setAttribute("class", "thirdfloor");
+        e.target.setAttribute("id", "thirdfloor");
     }
 }
 function buttom() {

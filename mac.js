@@ -42,8 +42,8 @@ function clickpic(e) {
     }
     else if(e.target.getAttribute("id") == "code_t"){     
         if ((x > 525 && x < 685) && (y > 400 && y < 470)) {
-            //e.target.setAttribute("id", "result_t");
-            //e.target.setAttribute("class", "result_t");
+            e.target.setAttribute("id", "result_t");
+            e.target.setAttribute("class", "result_t");
             $("#topdiv").text("再點擊即可回到二樓大廳");
         }
         else if ((x > 530 && x < 700) && (y > 480 && y < 530)) {
