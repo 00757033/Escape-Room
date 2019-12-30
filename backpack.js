@@ -19,6 +19,7 @@ $(document).ready(function () {
     });
   });
   button_click_show();
+  
 });
 function create_backpack() {
   var inner = '';
@@ -193,7 +194,6 @@ function computer() {
     '<td><input type="button" name="*" id="op6"  value=" * " onClick="operate(this.value)"></td>' +
     '<td><input type="button" name="/" id="op7"  value=" / " onClick="operate(this.value)"></input></td></tr>';
   calcinner += '</table>' + '</center>' + '</div>' + ' </form> ';
-
   $("#rightdiv").html(calcinner);
 }
 function button_click_show() {
@@ -201,8 +201,8 @@ function button_click_show() {
     $("#op" + i).click(function () {
       for (var j = 0; j <= 9; j++) {
         $("#ban" + j).attr("disabled", true);
-        if(j>=2 && j<=7)
-        $("#op" + j).attr("disabled", true);
+        if (j >= 2 && j <= 7)
+          $("#op" + j).attr("disabled", true);
       }
     });
 }
@@ -211,13 +211,16 @@ function add_backpack() {
     $("#td" + i).click(function () {
       for (var j = 0; j < localStorage.length; j++) {
         if (localStorage.getItem(localStorage.key(j)) == "#td" + i)
-          $("#td6").html("<img src=" + localStorage.key(j) + " height='240'" + " width='480'></img>");
-      }
+        { 
+          $("#td6").html("<img src=" + localStorage.key(j) + " height='240'" + " width='480'"+ "data-zoom-image = "+localStorage.key(j)+" ></img>");
+        }
+    }
     });
   }
 }
-function restart(){
+function restart() {
   for (var i = 0, j = 0; i < localStorage.length; i++) {
     $(localStorage.getItem(localStorage.key(i))).html("<img src=" + localStorage.key(i) + " height='90'" + " width='150'></img>");
   }
 }
+

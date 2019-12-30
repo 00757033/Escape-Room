@@ -12,6 +12,7 @@ body{
     float: left;
     margin-top: 100px;
     position: fixed;
+    z-index: 1;
  }
  #cal{
   background-color: white;

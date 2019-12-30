@@ -74,7 +74,7 @@ function clickpic(e) {
             if(localStorage.getItem("./backpack/coffe_black.jpg"))
             $("#topdiv").text("已獲得一杯咖啡2");
             if(localStorage.getItem("./backpack/money.jpg"))
-            $("#topdiv").text("試者去四樓找線索");
+            $("#topdiv").text("使用左側按鈕 輸入飲料編號");
         }
     }
     else if (e.target.getAttribute("id") == "rest_area_ac"
