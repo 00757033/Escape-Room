@@ -173,19 +173,21 @@ function hints() {
     hint_times++;
     var inner = "<div class = 'hint_list'>";
     if (hint_times >= 1) {
-        inner += "提示一: <br>";
+        inner += "提示一: 請至一樓販賣機找出被顏色擋住的數字<br>如果不在系館則可以按[我不在這裡]<br><br>";
     }
     if (hint_times >= 2) {
-        inner += "提示二: <br>";
+        inner += "提示二: 提示紙左側有分天藍色跟紅色的字有相對應的顏色的字<br><br>";
     }
     if (hint_times >= 3) {
-        inner += "提示三: <br>";
+        inner += "提示三: 解出密碼後對應旁邊的ASCII code<br><br>";
+    }
+    if (hint_times >= 4){
         inner += "<div class = 'button_giveup'><input id = 'button_giveup' type = 'button' value = '我放棄了QQ'></div>"
     }
     inner += "</div>";
     tmp.innerHTML = inner;
     //console.log("hint_times is " + hint_times);
-    if (hint_times >= 3) {
+    if (hint_times >= 4) {
         document.getElementById("button_giveup").addEventListener("click", giveup, false);
     }
 }
