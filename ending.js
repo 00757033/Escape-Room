@@ -66,7 +66,7 @@ function clickpic(e) {
 
     else if(e.target.getAttribute("id") == "img_4"){  
         console.log("img_4");
-        if ((x > 300 && x < 600) && (y > 400 && y < 430))  {
+        if ((x > 300 && x < 600) && (y > 400 && y < 440))  {
             var tmp = 0;
             for(var i = 0; i<localStorage.length; i++){
                 if(localStorage.key(i)==="./backpack/fire_extinguisher.jpg"){
@@ -85,7 +85,7 @@ function clickpic(e) {
                 e.target.setAttribute("class", "img_ending_1");
             }
         }  
-        if((x > 300 && x < 600) && (y > 450 && y < 480))  {
+        if((x > 300 && x < 600) && (y > 445 && y < 480))  {
             $("#topdiv").text("選擇選項回話以進行對話");
             e.target.setAttribute("id", "img_5");
             e.target.setAttribute("class", "img_5"); 
@@ -204,12 +204,12 @@ function clickpic(e) {
 
     else if(e.target.getAttribute("id") == "img_end"){
         console.log(x+" "+y); 
+        localStorage.clear();
         if ((x > 535 && x < 750) && (y > 380 && y < 450))  {
             //開始頁面
         }  
         else if ((x > 535 && x < 750) && (y > 480 && y < 550))  {            
             window.location.href='https://www.google.com.tw/'
         }  
-
     }
 }
