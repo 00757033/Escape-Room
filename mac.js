@@ -28,20 +28,26 @@ function clickpic(e) {
                 $("#topdiv").text("debug囉~");
         }
     }
-    else if(e.target.getAttribute("id") == "code_f"){     
-        if ((x > 525 && x < 685) && (y > 400 && y < 685)) {
+    else if(e.target.getAttribute("id") == "code_f"){   
+        if ((x > 525 && x < 685) && (y > 400 && y < 470)) {
             e.target.setAttribute("id", "result_f");
             e.target.setAttribute("class", "result_f");
+        }
+        else if ((x > 540 && x < 710) && (y > 480 && y < 540)) {
+            window.open("./second/mac/code_f_nobutton.png","放大圖片");
         }
         else if ((x >= 65 && x <= 275) && (y >= 265 && y <= 280))  {
             set_text(e);
         }
     }
     else if(e.target.getAttribute("id") == "code_t"){     
-        if ((x > 525 && x < 685) && (y > 400 && y < 685)) {
-            e.target.setAttribute("id", "result_t");
-            e.target.setAttribute("class", "result_t");
+        if ((x > 525 && x < 685) && (y > 400 && y < 470)) {
+            //e.target.setAttribute("id", "result_t");
+            //e.target.setAttribute("class", "result_t");
             $("#topdiv").text("再點擊即可回到二樓大廳");
+        }
+        else if ((x > 530 && x < 700) && (y > 480 && y < 530)) {
+            window.open("./second/mac/code_t_nobutton.png","放大圖片");
         }
     }
     else if(e.target.getAttribute("id") == "result_f"){ 

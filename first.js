@@ -7,12 +7,14 @@ var inmachine = 0;
 function clickpic(e) {
     var x = e.offsetX;
     var y = e.offsetY;
+    console.log("clickpic");
     if ((e.target.getAttribute("id") == "firstfloor")) {
         if ((x > 450 && x < 615) && (y > 225 && y < 415) && check()) {
             inmachine = 1;
             if (hint == 0) {
                 e.target.setAttribute("id", "coin");
                 e.target.setAttribute("class", "coin");
+
             }
             else {
                 e.target.setAttribute("id", "coin_1");
@@ -69,8 +71,8 @@ function clickpic(e) {
         window.location.href = 'second.html';
     }
     else if ((hint_times >= 1) || (enter == 1)) {
-        console.log("hint_times is "+hint_times+" while enter is "+enter);
         if ((e.target.getAttribute("id") == "coin") || (e.target.getAttribute("id") == "coin_1")) {
+            console.log("75");
             if (correct == 1) {
                 document.getElementById("onmachine").innerHTML = "";
                 if (hint == 0) {
@@ -90,6 +92,18 @@ function clickpic(e) {
             document.getElementById("onmachine").innerHTML = "";
         }
     }
+    else if(e.target.getAttribute("id")=="coin"){
+        console.log("x is "+x+" while y is "+y);          
+        if ((x > 590 && x < 790) && (y > 540 && y < 590)) {
+            window.open("./first/coin_machine_nobutton.jpg","放大圖片");
+        }
+    }
+    else if(e.target.getAttribute("id")=="coin_1"){
+        console.log("x is "+x+" while y is "+y);          
+        if ((x > 590 && x < 790) && (y > 540 && y < 590)) {
+            window.open("./first/coin_machine_hint2_nobutton.jpg","放大圖片");
+        }
+    }
     else
     {   if (e.target.getAttribute("id") == "list"){
             tobackpack("./backpack/list.jpg");
@@ -106,16 +120,14 @@ function clickpic(e) {
 }
 
 function check() {
+    console.log("check");
     var tools = 0;
     for (var i = 0; i < localStorage.length; i++) {
-        console.log("i is " + i + " " + localStorage.key(i));
         if (localStorage.key(i) === "./backpack/paper.jpg") {
             tools++;
-            console.log("tools++ paper");
         }
         else if (localStorage.key(i) === "./backpack/list.jpg") {
             tools++;
-            console.log("tools++ list");
         }
     }
     if (tools < 2) {
@@ -126,9 +138,9 @@ function check() {
 }
 
 function set_button(e) {
+    console.log("set_button");
     var inner = "";
     var tmp;
-    console.log("83");
     if (hint == 0) {
         tmp = document.getElementById("coin");
     }
@@ -139,7 +151,6 @@ function set_button(e) {
     inner += "<input id = 'hint' type = 'button' value = '我需要提示' class = 'button_hint'>";
     inner += "<input id = 'ans_b' type = 'button' value = '確認輸入' class = 'button_text'>";
     inner += "<input id = 'ans' type = 'text' placeholder = '限輸入英文' class = 'text_answer'>";
-    console.log(tmp);
     tmp.innerHTML = inner;
     if (hint == 0) {
         document.getElementById("where").addEventListener("click", place_hint, false);
@@ -149,7 +160,7 @@ function set_button(e) {
 }
 
 function place_hint(e) {
-    console.log("90");
+    console.log("place_hint");
     hint++;
     var tmp = document.getElementById("coin");
     tmp.setAttribute("class", "coin_1");
@@ -157,15 +168,8 @@ function place_hint(e) {
 }
 
 function hints() {
-    //var tmp;
-    //if(hint==0){
-    // tmp = document.getElementById("coin");
-    //}
-    //else{
-    //tmp = document.getElementById("coin_1");
-    //}
+    console.log("hints");
     tmp = document.getElementById("onmachine");
-    //console.log("in hints");
     hint_times++;
     var inner = "<div class = 'hint_list'>";
     if (hint_times >= 1) {
@@ -187,11 +191,13 @@ function hints() {
 }
 
 function giveup() {
+    console.log("give_up");
     var inner = "<div class = 'hint_list_1'><br>iMac</div>";
     document.getElementById("onmachine").innerHTML = inner;
 }
 
 function check_ans() {
+    console.log("check_ans");
     enter = 1;
     var result = document.getElementById("ans").value;
     console.log("result is " + result);
