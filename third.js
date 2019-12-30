@@ -90,8 +90,12 @@ function clickpic(e) {
         }
     }
     else if( e.target.getAttribute("id")=="coin_machine" ){
-        e.target.setAttribute("class", "thirdfloor");
-        e.target.setAttribute("id", "thirdfloor");
+        console.log("x is "+x+" while y is "+y);          
+        if ((x > 570 && x < 760) && (y > 490 && y < 550)) {
+            window.open("./third/coin_machine_nobutton.jpg","放大圖片");
+        }
+        //e.target.setAttribute("class", "thirdfloor");
+        //e.target.setAttribute("id", "thirdfloor");
     }
 }
 function buttom() {
