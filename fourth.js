@@ -60,12 +60,12 @@ function clickpic(e) {
         }
     }
     else if (e.target.getAttribute("id")=="stair4to3_2"){
-        if((x>420 && x<=800) &&(y>0 && y<370)){
+        if((x>720 && x<=800) &&(y>0 && y<370)){
             e.target.setAttribute("class", "stair3to4_2");
             e.target.setAttribute("id", "stair3to4_2");
             $("#topdiv").text("三樓往四樓樓梯");
         }
-        else
+        else if((x>=300 && x<=670) &&(y>0 && y<370))
             window.location.href='third.html';
     }
     else if (e.target.getAttribute("id")=="stair3to4_2"){
