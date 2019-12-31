@@ -19,7 +19,6 @@ $(document).ready(function () {
     });
   });
   button_click_show();
-  
 });
 function create_backpack() {
   var inner = '';
@@ -111,6 +110,7 @@ function clearnow() {
   $("#cal").html("");
   document.calc.result.value = "_";
   newnumber = true;
+  
 }
 
 function clearall() {
@@ -197,8 +197,17 @@ function computer() {
   $("#rightdiv").html(calcinner);
 }
 function button_click_show() {
-  for (var i = 0; i <= 2; i++)
+  for (var i = 0; i <= 1; i++)
     $("#op" + i).click(function () {
+      console.log("click");
+      for (var j = 0; j <= 9; j++) {
+        $("#ban" + j).attr("disabled", false);
+        if (j >= 2 && j <= 7)
+          $("#op" + j).attr("disabled", false);
+      }
+    });
+    $("#op" + 2).click(function () {
+      console.log("click");
       for (var j = 0; j <= 9; j++) {
         $("#ban" + j).attr("disabled", true);
         if (j >= 2 && j <= 7)
