@@ -8,16 +8,18 @@
             color: black;
             width: 300px;
             height: 50px;
-            margin-left: 1000px;
+            margin-left: 500px;
             margin-top: 600px;
         }
     </style>
     <script>
         function start(){
+            
             document.getElementById("demo").addEventListener("click", quick_demo, false);
         }
 
         function quick_demo(){
+            console.log("quick_demo");
             var coffe = 0, fire = 0;
             for(var i = 0; i<localStorage.length; i++){
                 console.log("i is "+i+" and localstorage is "+localStorage.key(i));
@@ -28,9 +30,9 @@
                     fire = 1;
                 }
             }
-            if(coffe==1)            
+            if(coffe==0)            
                 tobackpack("./backpack/coffe_blue.jpg");
-            if(fire==1)            
+            if(fire==0)            
                 tobackpack("./backpack/fire_extinguisher.jpg");            
             window.location.href='fifth.html';
         }
@@ -45,11 +47,11 @@
 <body>
     <div id="topdiv" class="topdiv">點選 [開始遊戲] 進入遊戲</div>
     <div id="leftdiv" class="leftdiv"></div>
-    <div id="background"class="background" onclick="clickpic(event)">
+    <div id="background" class="background" onclick = "clickpic(event)">
+        <input type = "button" id = "demo" value = "快速通關" class = "demo">
     </div>
     <div id="rightdiv" class="rightdiv"></div>
     <div id="downdiv" class="downdiv"></div>
-    <input type = "button" id = "demo" value = "快速通關" class = "demo">
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <script src="background.js"></script>
     <script src="backpack.js"></script>
